@@ -1,0 +1,108 @@
+.homePage {
+	align-items: center;
+	color: rgb(251, 37, 118);
+	display: flex;
+	flex-direction: column;
+	font-size: larger;
+	padding-top: 8%;
+	text-align: center;
+}
+
+.imageWrapper {
+	box-sizing: initial;
+	height: 200px;
+	width: 200px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgb(127, 255, 212);
+	border-image: initial;
+	border-radius: 50%;
+	margin: 0px auto;
+	padding: 10px;
+}
+
+.profileImage {
+	height: 200px;
+	width: 200px;
+	border-width: initial;
+	border-style: initial;
+	border-color: white;
+	border-image: initial;
+	border-radius: 50%;
+}
+
+.heading1 {
+	font-size: 16px;
+	margin: 0px auto;
+	padding: 20px 0px 10px;
+}
+
+.heading2 {
+	color: white;
+	margin: 0px auto;
+	padding: 0px 0px 10px;
+}
+
+.heading3 {
+	color: aquamarine;
+	font-size: 20px;
+	padding-bottom: 30px;
+	margin: 0px auto;
+}
+
+.btn {
+	display: flex;
+}
+
+.btn a {
+	text-decoration: none;
+
+}
+
+.btnLink {
+	border-radius: 30px;
+	color: #0a192f;
+	font-weight: 600;
+	position: relative;
+	border: 1px solid aquamarine;
+	display: flex;
+	align-self: flex-start;
+	align-items: center;
+	overflow: hidden;
+}
+
+.btnLink::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateX(100%);
+	transition: all 0.4s ease-out;
+	z-index: -1;
+}
+
+.btnLink:hover {
+	transition: all 0.4s ease-out;
+}
+
+.btnLink:hover::before {
+	width: 100%;
+	height: 100%;
+	background-color: aquamarine;
+	transform: translateX(0);
+	transition: all 0.4s ease-out;
+}
+
+.btnText {
+	color: rgb(251, 37, 118);
+	padding: 0px 2rem;
+}
+
+.btnIcon {
+	background-color: aquamarine;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	padding: 1rem;
+}
