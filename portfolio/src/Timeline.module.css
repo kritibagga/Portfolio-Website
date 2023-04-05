@@ -1,0 +1,70 @@
+.break {
+	width: 20%;
+	margin: 0 auto;
+	margin-top: 5%;
+    border-style:none;
+    border-bottom: 5px dotted grey;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	text-align: center;
+	padding: 3.5rem 0;
+	position: relative;
+	color: white;
+}
+
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+    width:80%;
+    margin:0 auto;
+  }
+.timelineItem {
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid #2a2e35;
+  }
+ .timelineIcon{
+    position: absolute;
+    left: -27px;
+    top: 0;
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .timelineIcon i {
+    font-size: 1.3rem;
+  }
+   .timelineDuration {
+    padding: 0.2rem 0.6rem;
+    background-color: #2a2e35;
+    border-radius: 15px;
+    display: inline-block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .itemHeading {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:white;
+  }
+.itemHeading span {
+    color: #b2becd;
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  .timelineItem p {
+    color: #b2becd;
+  }
+

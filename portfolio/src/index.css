@@ -8,21 +8,23 @@ body {
 background-color: #0a192f;
 }
 
-.animation  {
+.animation {
 transform: translateY(0px) scaleY(1);
-animation: 1s ease-in-out 0s 1 normal none running appear;
+animation: appear 1s ease-in-out;
+
 }
 
 
 @keyframes appear {
-0% {
-  transform: translateY(-100%) scaleY(0);
-}
-100% {
-  transform: translateY(0) scaleY(1);
-}
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
-@media only screen and (max-device-width: 480px) {
+
+@media only screen and (max-width: 480px) {
 body{width:100%}
 }
