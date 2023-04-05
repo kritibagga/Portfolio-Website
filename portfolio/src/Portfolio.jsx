@@ -3,6 +3,7 @@
 import React from 'react';
 import HomePage from './HomePage.jsx';
 import NavBar from './NavBar.jsx';
+import Footer from './Footer.jsx';
 
 
 function Portfolio() {
@@ -10,6 +11,7 @@ function Portfolio() {
     <>
     <NavBar />
     <HomePage />
+    <Footer />
     </>
   );
 }

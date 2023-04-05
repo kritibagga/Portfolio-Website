@@ -1,0 +1,65 @@
+.footer {
+	position: absolute;
+	left: 10%;
+	top: 43%;
+}
+
+.footer li {
+	list-style: none;
+}
+
+.footer li a {
+	background-color: rgb(127, 255, 212);
+	display: block;
+	font-size: 35px;
+	height: 60px;
+	line-height: 64px;
+	position: relative;
+	text-align: center;
+	width: 60px;
+	border-radius: 50%;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.icon {
+	color: rgb(10, 25, 47);
+	position: relative;
+	transition: all 0.5s ease 0s;
+}
+
+.footer li a:hover .icon {
+	color: #fff;
+	transform: rotateY(360deg);
+}
+
+.footer li a:before {
+	content: "";
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	border-image: initial;
+	border-radius: 50%;
+	transition: all 0.5s ease 0s;
+}
+
+.footer li a:hover:before {
+	top: 0;
+}
+
+.footer li:nth-child(1) a:before {
+	background: rgb(110, 84, 148);
+}
+
+.footer li:nth-child(2) a:before {
+	background: #15ae55;
+}
+
+.footer li:nth-child(3) a:before {
+	background: #0077b5;
+}
