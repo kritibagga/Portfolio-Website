@@ -35,10 +35,12 @@
 	background-color: aquamarine;
 	bottom: 0;
 	left: 0;
-	top: 20px;
-	transform-origin: right;
+	top: 25px;
+    transform-origin: right;
 	transform: scaleX(0);
-	transition: transform 0.3s ease-in-out;
+	transition: transform 0.1s ease-in-out;
+
+
 }
 
 .listitems a:hover::before {
@@ -56,9 +58,14 @@
 	justify-content: center;
 }
 
-.listitems a:focus {
-	padding: 4px;
+.listitems a:focus-visible {
+	padding: 10px;
 	outline: 1px solid aquamarine;
+    pointer-events:none;
+}
+
+.listitems a:focus{
+    color:aquamarine;
 
 }
 @media only screen and (max-width: 480px) {

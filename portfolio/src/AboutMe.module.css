@@ -1,0 +1,23 @@
+.aboutMeSection {
+	background-color: pink;
+	width: 80%;
+	margin: 0 auto;
+	padding: 2%;
+}
+
+.introduction {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.introImage {
+	margin-right: 5%;
+}
+
+.introImage img {
+	width: 200px;
+	height: 200px;
+}
+
+
