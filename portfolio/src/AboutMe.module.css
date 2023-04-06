@@ -20,4 +20,20 @@
 	height: 200px;
 }
 
+@media only screen and (max-width: 480px) {
+	.introduction {
+		padding: 2rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+	}
 
+	.introduction h1 {
+		text-align: center;
+		margin: 10px;
+	}
+	.aboutMeSection {
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	}
+}
