@@ -1,0 +1,161 @@
+.wrapper {
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 8rem;
+}
+
+.section1 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 2rem;
+}
+
+.title h2 {
+	position: relative;
+	font-size: 4rem;
+	font-weight: 700;
+	color: aquamarine;
+}
+
+.title h2 span:first-child {
+	color: white;
+}
+
+.title {
+	text-align: center;
+}
+
+.bgText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: #2a2e35;
+	transition: all 0.4s ease-in-out;
+	z-index: -1;
+	transform: translate(-50%, -50%);
+	font-weight: 800;
+	font-size: 6.3rem;
+}
+
+.headingPara {
+	color: white;
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.headingPara a {
+	color: aquamarine;
+	text-decoration: none;
+}
+
+.headingPara a:hover {
+	color: coral;
+}
+
+.inputControl {
+	margin: 1.5rem 0;
+}
+
+.inputControl input,
+.inputControl textarea {
+	border-radius: 30px;
+	font-weight: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	padding: 0.8rem 1.1rem;
+	outline: none;
+	border: none;
+	background-color: #2a2e35;
+	width: 100%;
+	color: white;
+	resize: none;
+}
+
+.ic {
+	display: flex;
+}
+.ic :last-child {
+	margin-left: 1.5rem;
+}
+
+.form {
+	margin: 0 auto;
+}
+
+.btnWrapper {
+	text-align: center;
+}
+
+.btn {
+	padding: 20px 38px;
+	border-radius: 30px;
+	font-size: 1.5rem;
+	background-color: aquamarine;
+}
+
+.btn i {
+	margin-left: 10px;
+}
+.endPage {
+	color: black;
+	text-align: center;
+	background: aquamarine;
+	position: absolute;
+	top: 37%;
+	left: 37%;
+	padding: 6rem;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 480px) {
+	.contactFooter {
+		display: flex;
+		position: absolute;
+		top: 37rem;
+		left: 5rem;
+	}
+
+	.wrapper {
+		padding: 10px;
+		top: 13%;
+		left: 4%;
+		width: 100%;
+		margin-top: 2rem;
+	}
+
+	.title h2 {
+		font-size: 3rem;
+	}
+	.endPage {
+		left: 9%;
+	}
+}
+
+/* Tablet view */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+	.contactFooter {
+		position: absolute;
+		top: 76%;
+		left: 12%;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.endPage {
+		left: 30%;
+		padding: 7rem;
+	}
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1025px) {
+	.contactFooter {
+		position: absolute;
+		left: 0;
+		top: 40%;
+	}
+
+}
