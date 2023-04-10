@@ -5,6 +5,7 @@ import NavBar from "./NavBar.jsx";
 import Footer from "./Footer.jsx";
 import AboutMe from "./AboutMe.jsx";
 import Project from "./Project.jsx";
+import Contact from "./Contact.jsx";
 import { Routes, Route } from "react-router-dom";
 
 function Portfolio() {
@@ -34,10 +35,10 @@ function Portfolio() {
 					path='/home/about'
 					element={<AboutMe />}
 				/>
-				{/* <Route
+				<Route
 					path='/home/contact'
 					element={<Contact />}
-				/> */}
+				/>
 				<Route
 					path='/home/project'
 					element={<Project />}
