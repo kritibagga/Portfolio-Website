@@ -1,6 +1,8 @@
 import styles from "./Project.module.css";
 import React from "react";
-import ProjectImage from "./Images/projectImage.jpg";
+import weatherAPP from "./Images/weather-app.png";
+import CalculatorImage from "./Images/Calculator App.png";
+import PortfolioImage from "./Images/portfolioImage.png";
 
 function Project() {
 	return (
@@ -19,7 +21,7 @@ function Project() {
 				<div className={styles.portfolioItem}>
 					<div className={styles.image}>
 						<img
-							src={ProjectImage}
+							src={weatherAPP}
 							alt=''
 						/>
 						<h1 className={styles.captions}>Weather App</h1>
@@ -40,7 +42,7 @@ function Project() {
 				<div className={styles.portfolioItem}>
 					<div className={styles.image}>
 						<img
-							src={ProjectImage}
+							src={CalculatorImage}
 							alt=''
 						/>
 						<h1 className={styles.captions}>Calculator</h1>
@@ -49,7 +51,7 @@ function Project() {
 						<h3>Project Source</h3>
 						<div className={styles.icons}>
 							<a
-								href='https://www.google.com/'
+								href='https://github.com/kritibagga/Calculator'
 								className={styles.icon}
 								target='_blank'
 								rel='noreferrer'>
@@ -61,7 +63,7 @@ function Project() {
 				<div className={styles.portfolioItem}>
 					<div className={styles.image}>
 						<img
-							src={ProjectImage}
+							src={PortfolioImage}
 							alt=''
 						/>
 						<h1 className={styles.captions}>Portfolio</h1>

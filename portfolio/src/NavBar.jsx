@@ -1,11 +1,11 @@
 import styles from "./NavBar.module.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import icons1 from "./Images/icon1.png";
 
 const NavBar = () => {
 	const [visible, setVisible] = React.useState();
 	const [icon, SetIcon] = React.useState(true);
-
 
 	return (
 		<>
@@ -65,20 +65,31 @@ const NavBar = () => {
 					</div>
 				)}
 			</div>
-			<ul className={styles.navBar}>
-				<li className={styles.listitems}>
-					<Link to='/home'>Home</Link>
-				</li>
-				<li className={styles.listitems}>
-					<Link to='/home/about'>About</Link>
-				</li>
-				<li className={styles.listitems}>
-					<Link to='/home/project'>Projects</Link>
-				</li>
-				<li className={styles.listitems}>
-					<Link to='/home/contact'>Contact</Link>
-				</li>
-			</ul>
+			<div className={styles.navWrapper}>
+				<div className={styles.leftNav}>
+					<div className={styles.leftWrapper}>
+					<img
+						src={icons1}
+						alt=''
+					/>
+					<span className={styles.nameIcon}>Kriti Bagga</span>
+					</div>
+				</div>
+				<ul className={styles.navBar}>
+					<li className={styles.listitems}>
+						<Link to='/home'>Home</Link>
+					</li>
+					<li className={styles.listitems}>
+						<Link to='/home/about'>About</Link>
+					</li>
+					<li className={styles.listitems}>
+						<Link to='/home/project'>Projects</Link>
+					</li>
+					<li className={styles.listitems}>
+						<Link to='/home/contact'>Contact</Link>
+					</li>
+				</ul>
+			</div>
 		</>
 	);
 };
