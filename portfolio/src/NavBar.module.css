@@ -2,8 +2,15 @@
 	color: rgb(10, 25, 47);
 	display: none;
 }
+
 .btn i {
 	font-size: 2rem;
+}
+
+.navWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .navBar {
@@ -16,6 +23,21 @@
 	padding: 25px 10px 25px 0px;
 }
 
+.leftNav img {
+	width: 50px;
+	height: auto;
+	margin: 10px;
+}
+
+.leftWrapper {
+	display: flex;
+	align-items: center;
+	font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.nameIcon {
+	color: azure;
+}
 .listitems {
 	margin-right: 20px;
 }
@@ -65,14 +87,20 @@
 .listitems a:focus {
 	color: aquamarine;
 }
+
 @media only screen and (max-width: 480px) {
 	.dropdown {
 		display: block;
 	}
 
+	.leftNav {
+		display: none;
+	}
+
 	.navBar {
 		display: none;
 	}
+
 	.mobileViewListItems {
 		list-style-type: none;
 		margin-right: 0px;
@@ -83,9 +111,11 @@
 	.mobileViewListItems:hover {
 		background-color: darksalmon;
 	}
+
 	.mobileViewListItems a {
 		text-decoration: none;
 	}
+
 	.mobileViewListItems i {
 		color: rgb(10, 25, 47);
 	}
