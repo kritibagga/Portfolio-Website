@@ -14,7 +14,7 @@ function Project() {
 				</h2>
 			</div>
 			<p className={styles.portText}>
-				Here is some of my work which i have done using Html, Css, JavaScript,
+				Here are some of my work which i have done using Html, Css, JavaScript,
 				ReactJS .
 			</p>
 			<div className={styles.portfolios}>
