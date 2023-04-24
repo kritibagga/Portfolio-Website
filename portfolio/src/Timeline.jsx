@@ -44,7 +44,7 @@ export default function Timeline() {
 					</div>
 					<p className={styles.timelineDuration}>2012 - 2016</p>
 					<h5 className={styles.itemHeading}>
-						Electrical and Electronics Engineering (B.Tech)<span> - JNTUH</span>
+						Electrical & Electronics Engineering (B.Tech)<span> - JNTUH</span>
 					</h5>
 					<p>Hyderabad, India</p>
 				</div>
