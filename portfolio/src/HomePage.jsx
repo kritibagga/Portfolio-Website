@@ -12,7 +12,7 @@ function HomePage() {
 					className={styles.profileImage}
 					src={photo}
 					alt='myphoto'
-					loading='lazy'
+
 				/>
 			</div>
 			<div>
