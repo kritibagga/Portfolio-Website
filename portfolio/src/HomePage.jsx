@@ -4,6 +4,8 @@ import React from 'react';
 import photo from './Images/PersonalPic.jpg';
 import pdf from './Resume.pdf';
 
+
+
 function HomePage() {
 	return (
 		<div className={`${styles.homePage}`}>
@@ -16,7 +18,7 @@ function HomePage() {
 				/>
 			</div>
 			<div>
-				<h3 className={styles.heading1}>HEY THERE 👋</h3>
+				<h3 data-aos="zoom-in" className={styles.heading1}>HEY THERE 👋</h3>
 				<h1 className={styles.heading2}>I'm, Kriti Bagga</h1>
 				<h3 className={styles.heading3}>
 					Front End Developer / UI Developer / Tester
