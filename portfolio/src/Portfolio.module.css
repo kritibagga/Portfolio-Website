@@ -1,10 +1,12 @@
 .loader {
 	position: relative;
 }
+
 .loaderText {
 	margin-top: 80px;
 	color: white;
 }
+
 .spinner,
 .loaderText {
 	position: fixed;

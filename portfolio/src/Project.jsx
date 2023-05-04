@@ -22,7 +22,7 @@ function Project() {
 					<div className={styles.image}>
 						<img
 							src={weatherAPP}
-							alt=''
+							alt='weather app'
 						/>
 						<h1 className={styles.captions}>Weather App</h1>
 					</div>

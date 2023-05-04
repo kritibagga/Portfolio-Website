@@ -3,7 +3,7 @@ import styles from "./Timeline.module.css";
 
 export default function Timeline() {
 	return (
-		<div className="animation">
+		<div data-aos="zoom-in" >
 			<hr className={styles.break} />
 			<h4 className={styles.title}>My Timeline</h4>
 			<div className={styles.timeline}>

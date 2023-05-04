@@ -16,9 +16,11 @@ export default function Skills() {
 	];
 
 	return (
-		<>
-			<hr className={`${styles.break} animation`} />
-			<div className={`${styles.aboutStats} animation`}>
+		<div data-aos="flip-left"
+		data-aos-easing="ease-out-cubic"
+		data-aos-duration="2000">
+			<hr className={`${styles.break}` } />
+			<div className={`${styles.aboutStats} `}>
 				<h4 className={styles.statTitle}>My Skills</h4>
 				<div className={styles.progressBars}>
 					{skillObject.map((item) => {
@@ -38,6 +40,6 @@ export default function Skills() {
 					})}
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
