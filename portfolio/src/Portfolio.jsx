@@ -28,7 +28,7 @@ function Portfolio() {
 			<h1 className={styles.loaderText}>Loading.....</h1>
 		</div>
 	) : (
-		<>
+		<div className={styles.background}>
 			<NavBar />
 
 			<Routes>
@@ -62,7 +62,7 @@ function Portfolio() {
 					element={<Project />}
 				/>
 			</Routes>
-		</>
+		</div>
 	);
 }
 

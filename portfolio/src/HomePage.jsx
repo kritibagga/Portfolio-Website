@@ -1,9 +1,8 @@
-import styles from './HomePage.module.css';
-import React from 'react';
+import styles from "./HomePage.module.css";
+import React from "react";
 
-import photo from './Images/PersonalPic.jpg';
-import pdf from './Resume.pdf';
-
+import photo from "./Images/PersonalPic.jpg";
+import pdf from "./Resume.pdf";
 
 
 function HomePage() {
@@ -14,11 +13,14 @@ function HomePage() {
 					className={styles.profileImage}
 					src={photo}
 					alt='myphoto'
-
 				/>
 			</div>
 			<div>
-				<h3 data-aos="zoom-in" className={styles.heading1}>HEY THERE 👋</h3>
+				<h3
+					data-aos='zoom-in'
+					className={styles.heading1}>
+					HEY THERE 👋
+				</h3>
 				<h1 className={styles.heading2}>I'm, Kriti Bagga</h1>
 				<h3 className={styles.heading3}>
 					Front End Developer / UI Developer / Tester
@@ -28,15 +30,17 @@ function HomePage() {
 				<a
 					className={styles.btnLink}
 					href={pdf}
-                    target="_blank"
-                    rel="noreferrer">
-
+					target='_blank'
+					rel='noreferrer'>
 					<span className={styles.btnText}>Download CV</span>
 					<span className={styles.btnIcon}>
 						<i className='fas fa-download'></i>
 					</span>
 				</a>
 			</div>
+
+
+
 		</div>
 	);
 }

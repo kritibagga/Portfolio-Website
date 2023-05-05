@@ -66,8 +66,22 @@
 		text-align: center;
 		margin: 10px;
 	}
+
 	.aboutMeSection {
 		margin-top: 2rem;
 		margin-bottom: 4rem;
 	}
+
+	.title{
+		margin-top:2rem;
+	}
+
+	.title h2 {
+		font-size: 2rem;
+	}
+
+	.bgText {
+		font-size: 3rem;
+	}
+
 }

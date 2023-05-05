@@ -16,10 +16,10 @@ export default function Skills() {
 	];
 
 	return (
-		<div data-aos="flip-left"
-		data-aos-easing="ease-out-cubic"
-		data-aos-duration="2000">
-			<hr className={`${styles.break}` } />
+		<div
+			data-aos='fade-up'
+			data-aos-duration='1000'>
+			<hr className={`${styles.break}`} />
 			<div className={`${styles.aboutStats} `}>
 				<h4 className={styles.statTitle}>My Skills</h4>
 				<div className={styles.progressBars}>
