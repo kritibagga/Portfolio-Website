@@ -50,7 +50,6 @@ function AboutMe() {
 					</div>
 				</div>
 			</section>
-
 			<Skills />
 			<Timeline />
 		</div>

@@ -17,7 +17,10 @@ function Project() {
 				Here are some of my work which i have done using Html, Css, JavaScript,
 				ReactJS .
 			</p>
-			<div className={styles.portfolios}>
+			<div
+				className={styles.portfolios}
+				data-aos='fade-up'
+				data-aos-duration='1000'>
 				<div className={styles.portfolioItem}>
 					<div className={styles.image}>
 						<img
@@ -39,7 +42,10 @@ function Project() {
 						</div>
 					</div>
 				</div>
-				<div className={styles.portfolioItem}>
+				<div
+					className={styles.portfolioItem}
+					data-aos='fade-up'
+					data-aos-duration='1000'>
 					<div className={styles.image}>
 						<img
 							src={CalculatorImage}
@@ -60,7 +66,10 @@ function Project() {
 						</div>
 					</div>
 				</div>
-				<div className={styles.portfolioItem}>
+				<div
+					className={styles.portfolioItem}
+					data-aos='fade-up'
+					data-aos-duration='1000'>
 					<div className={styles.image}>
 						<img
 							src={PortfolioImage}
