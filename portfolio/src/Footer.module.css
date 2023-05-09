@@ -75,19 +75,26 @@
 	}
 }
 
-/* Desktop view */
-@media only screen and (min-width: 1025px) {
+/* Tablet view */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 	.footer {
-		left: 25%;
-		top: 35%;
+		display: flex;
+		left: 35%;
+		top: 103%;
 	}
 }
 
-/* Tablet view */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+/* Laptop view */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 	.footer {
-		display: flex;
-		margin-top: 10rem;
-		margin-left: 12rem;
+		left: 16%;
+	}
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1025px) {
+	.footer {
+		left: 26%;
+		top: 43%;
 	}
 }

@@ -32,7 +32,7 @@
 .leftWrapper {
 	display: flex;
 	align-items: center;
-	font-family:Verdana, Geneva, Tahoma, sans-serif
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .nameIcon {
@@ -69,11 +69,11 @@
 }
 
 .mobileButton {
-	color: rgb(10, 25, 47);
-	padding: 10px;
+	color: white;
+	padding: 10px 0;
 	text-align: center;
 	display: grid;
-	grid-template-columns: 30px 30px;
+	grid-template-columns: 2rem 3rem;
 	justify-items: start;
 	justify-content: center;
 }
@@ -108,16 +108,8 @@
 		margin-bottom: 10px;
 	}
 
-	.mobileViewListItems:hover {
-		background-color: darksalmon;
-	}
-
 	.mobileViewListItems a {
 		text-decoration: none;
-	}
-
-	.mobileViewListItems i {
-		color: rgb(10, 25, 47);
 	}
 
 	.mobileViewListItems a::before {
@@ -133,13 +125,25 @@
 	}
 
 	.mobileViewMenu {
-		background-color: rgb(237 246 243 / 89%);
+		background-color: rgb(68 68 68);
 		margin: 0 auto;
 		padding: 25px;
-		width: 56%;
+		width: 100%;
 		position: absolute;
 		right: 0;
 		z-index: 1;
+		animation: growDown 500ms linear forwards;
+		transform-origin: top center;
+	}
+
+	@keyframes growDown {
+		0% {
+			transform: scaleY(0);
+		}
+
+		100% {
+			transform: scaleY(1);
+		}
 	}
 
 	.heading {
@@ -148,5 +152,51 @@
 		padding: 20px;
 		flex-direction: row;
 		background-color: aquamarine;
+	}
+
+	.mobileButton {
+		border: 0.1em solid aquamarine;
+		border-radius: 0.5em;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		transition: 0.5s;
+	}
+
+	.mobileButton span {
+		position: absolute;
+		width: 25%;
+		height: 100%;
+		background-color: aquamarine;
+		transform: translateY(150%);
+		border-radius: 50%;
+		left: calc((var(--n) - 1) * 25%);
+		transition: 0.5s;
+		transition-delay: calc((var(--n) - 1) * 0.1s);
+		z-index: -1;
+	}
+
+	.mobileButton:hover {
+		color: black;
+	}
+
+	.mobileButton:hover span {
+		transform: translateY(0) scale(2);
+	}
+
+	.mobileButton span:nth-child(1) {
+		--n: 1;
+	}
+
+	.mobileButton span:nth-child(2) {
+		--n: 2;
+	}
+
+	.mobileButton span:nth-child(3) {
+		--n: 3;
+	}
+
+	.mobileButton span:nth-child(4) {
+		--n: 4;
 	}
 }
