@@ -133,11 +133,19 @@
 }
 
 /* Tablet view */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) and (max-width: 768px) {
 	.contactFooter {
 		position: absolute;
-		top: 76%;
-		left: 12%;
+		left: 20%;
+	}
+}
+
+/* Laptop view */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.contactFooter {
+		position: absolute;
+		top: 40%;
+		left: 16%;
 	}
 
 	.wrapper {
@@ -157,5 +165,4 @@
 		left: 0;
 		top: 40%;
 	}
-
 }
