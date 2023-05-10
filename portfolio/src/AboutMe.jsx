@@ -2,8 +2,27 @@ import styles from "./AboutMe.module.css";
 import React from "react";
 import Skills from "./Skills.jsx";
 import Timeline from "./Timeline.jsx";
+import { useRef, useState, useEffect } from "react";
 
 function AboutMe() {
+	const [showIcon, setShowIcon] = useState(false);
+	const viewPortHeight = window.innerHeight;
+
+	/*  Scroll Function onClicking scroll icon*/
+	const ref = useRef(null);
+	const scrollClick = () => {
+		ref.current?.scrollIntoView({ behavior: "smooth" });
+	};
+
+	/* Scroll Icon Visibility */
+	useEffect(() => {
+		if (viewPortHeight < 800) {
+			setShowIcon(true);
+		} else {
+			setShowIcon(false);
+		}
+	}, [viewPortHeight]);
+
 	return (
 		<div>
 			<div className={`${styles.title}  animation`}>
@@ -50,7 +69,15 @@ function AboutMe() {
 					</div>
 				</div>
 			</section>
-			<Skills />
+			{showIcon && (
+				<p className={styles.scrollText}>
+					<i
+						onClick={scrollClick}
+						className=' fa-solid fa-angles-down '
+					/>
+				</p>
+			)}
+			<Skills reference={ref} />
 			<Timeline />
 		</div>
 	);
