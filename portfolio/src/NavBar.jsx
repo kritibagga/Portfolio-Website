@@ -37,16 +37,21 @@ const NavBar = () => {
 								<Link to='/home'>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-house'></i>Home
-										<span></span><span></span><span></span><span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
 									</p>
-
 								</Link>
 							</li>
 							<li className={styles.mobileViewListItems}>
 								<Link to='/home/about'>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-user'></i>About
-										<span></span><span></span><span></span><span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
 									</p>
 								</Link>
 							</li>
@@ -54,7 +59,10 @@ const NavBar = () => {
 								<Link to='/home/project'>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-briefcase'></i>Projects
-										<span></span><span></span><span></span><span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
 									</p>
 								</Link>
 							</li>
@@ -62,7 +70,10 @@ const NavBar = () => {
 								<Link to='/home/contact'>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-address-card'></i>Contact
-										<span></span><span></span><span></span><span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
 									</p>
 								</Link>
 							</li>
@@ -73,11 +84,11 @@ const NavBar = () => {
 			<div className={styles.navWrapper}>
 				<div className={styles.leftNav}>
 					<div className={styles.leftWrapper}>
-					<img
-						src={icons1}
-						alt=''
-					/>
-					<span className={styles.nameIcon}>Kriti Bagga</span>
+						<img
+							src={icons1}
+							alt=''
+						/>
+						<span className={styles.nameIcon}>Kriti Bagga</span>
 					</div>
 				</div>
 				<ul className={styles.navBar}>

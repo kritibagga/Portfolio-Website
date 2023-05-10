@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Skills.module.css";
 
-export default function Skills() {
+export default function Skills(props) {
 	const skillObject = [
 		{ title: "html5", percentage: 80, id: 1 },
 		{ title: "css3", percentage: 70, id: 2 },
@@ -17,6 +17,7 @@ export default function Skills() {
 
 	return (
 		<div
+			ref={props.reference}
 			data-aos='fade-up'
 			data-aos-duration='1000'>
 			<hr className={`${styles.break}`} />

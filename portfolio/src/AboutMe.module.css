@@ -3,7 +3,7 @@
 	width: 80%;
 	margin: 0 auto;
 	padding: 4%;
-	margin-top:4rem;
+	margin-top: 4rem;
 	text-align: justify;
 }
 
@@ -26,6 +26,7 @@
 
 .title {
 	text-align: center;
+	margin-top: 3rem;
 }
 
 .bgText {
@@ -40,10 +41,9 @@
 	font-size: 6.3rem;
 }
 
-.para{
-	margin-top:10px;
+.para {
+	margin-top: 10px;
 }
-
 
 .introImage {
 	margin-right: 5%;
@@ -52,6 +52,13 @@
 .introImage img {
 	width: 200px;
 	height: 200px;
+}
+
+.scrollText{
+	color:white;
+	text-align: center;
+	margin-top: 2rem;
+	font-size: 20px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -72,8 +79,8 @@
 		margin-bottom: 4rem;
 	}
 
-	.title{
-		margin-top:2rem;
+	.title {
+		margin-top: 2rem;
 	}
 
 	.title h2 {
@@ -83,5 +90,4 @@
 	.bgText {
 		font-size: 3rem;
 	}
-
 }
