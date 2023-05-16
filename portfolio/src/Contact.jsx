@@ -1,6 +1,6 @@
 import styles from "./Contact.module.css";
 import React, { useState } from "react";
-import Footer from "./Footer.jsx";
+import SocialIcons from "./SocialIcons.jsx";
 
 const FORM_ENDPOINT =
 	"https://public.herotofu.com/v1/b50a65c0-d4b5-11ed-b656-837b57be60e0";
@@ -97,7 +97,7 @@ const ContactForm = () => {
 				</form>
 			</div>
 			<div className={styles.contactFooter}>
-				<Footer />
+				<SocialIcons />
 			</div>
 		</div>
 	);

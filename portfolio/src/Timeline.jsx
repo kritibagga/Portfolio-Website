@@ -5,7 +5,7 @@ export default function Timeline() {
 	return (
 		<div
 			data-aos='fade-up'
-			data-aos-duration='1000'>
+			data-aos-duration='1000' className={styles.timelineWrapper}>
 			<hr className={styles.break} />
 			<h4 className={styles.title}>My Timeline</h4>
 			<div className={styles.timeline}>

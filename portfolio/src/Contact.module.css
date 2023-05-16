@@ -1,7 +1,8 @@
 .wrapper {
 	width: 50%;
 	margin: 0 auto;
-	padding-top: 3rem;
+	padding: 3rem 0 4rem 0;
+	height: calc(100vh - 4.4rem);
 }
 
 .section1 {
@@ -88,7 +89,7 @@
 }
 
 .btn {
-	padding: 20px 38px;
+	padding: 15px 38px;
 	border-radius: 30px;
 	font-size: 1.5rem;
 	background-color: aquamarine;
@@ -122,6 +123,8 @@
 		left: 4%;
 		width: 100%;
 		margin-top: 2rem;
+		margin-bottom: 3rem;
+		height: 100vh;
 	}
 
 	.title h2 {
@@ -130,22 +133,30 @@
 	.endPage {
 		left: 9%;
 	}
+
+	.btn {
+		padding: 11px 28px;
+		font-size: 1rem;
+	}
 }
 
 /* Tablet view */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	.contactFooter {
+		display: flex;
+		flex-direction: row;
 		position: absolute;
-		left: 20%;
+		top: 10rem;
+		left: 10rem;
 	}
 }
 
 /* Laptop view */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
 	.contactFooter {
 		position: absolute;
-		top: 40%;
-		left: 16%;
+		top: 30%;
+		left: 26%;
 	}
 
 	.wrapper {
@@ -159,10 +170,10 @@
 }
 
 /* Desktop view */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1441px) {
 	.contactFooter {
 		position: absolute;
-		left: 0;
-		top: 40%;
+		top: 20%;
+		left: 20%;
 	}
 }
