@@ -1,3 +1,4 @@
+
 .break {
 	width: 20%;
 	margin: 0 auto;
@@ -19,7 +20,7 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 2rem;
-	padding-bottom: 3rem;
+	padding-bottom: 7rem;
 	width: 80%;
 	margin: 0 auto;
 }
@@ -68,10 +69,15 @@
 	color: #b2becd;
 }
 
+/* Mobile View */
 @media only screen and (max-width: 480px) {
 	.timeline {
 		padding: 2rem;
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.timelineWrapper{
+		margin-bottom:11rem;
 	}
 }
 

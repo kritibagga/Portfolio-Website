@@ -1,0 +1,104 @@
+.socialLinks {
+	position: absolute;
+	left: 10%;
+	top: 43%;
+}
+
+.socialLinks li {
+	list-style: none;
+}
+
+.socialLinks li a {
+	background-color: rgb(127, 255, 212);
+	display: block;
+	font-size: 35px;
+	height: 60px;
+	line-height: 64px;
+	position: relative;
+	text-align: center;
+	width: 60px;
+	border-radius: 50%;
+	margin: 10px;
+	overflow: hidden;
+}
+
+.icon {
+	color: rgb(10, 25, 47);
+	position: relative;
+	transition: all 0.5s ease 0s;
+}
+
+.socialLinks li a:hover .icon {
+	color: #fff;
+	transform: rotateY(360deg);
+}
+
+.socialLinks li a:before {
+	content: "";
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	border-width: 3px;
+	border-style: solid;
+	border-color: rgb(255, 255, 255);
+	border-image: initial;
+	border-radius: 50%;
+	transition: all 0.5s ease 0s;
+}
+
+.socialLinks li a:hover:before {
+	top: 0;
+}
+
+.socialLinks li:nth-child(1) a:before {
+	background: rgb(110, 84, 148);
+}
+
+.socialLinks li:nth-child(2) a:before {
+	background: #15ae55;
+}
+
+.socialLinks li:nth-child(3) a:before {
+	background: #0077b5;
+}
+
+/* Mobile view */
+@media only screen and (max-width: 480px) {
+	.socialLinks {
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 20px;
+		left: 18%;
+		top: 70%;
+	}
+}
+
+/* Tablet view */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.socialLinks {
+		position: absolute;
+		top: 23%;
+		left: 10%;
+	}
+}
+
+/* Laptop view */
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+	.socialLinks {
+		position: absolute;
+		left: 25%;
+		top: 41%;
+	}
+}
+
+/* Desktop view */
+@media only screen and (min-width: 1441px) {
+	.socialLinks {
+		left: 35%;
+		top: 32%;
+	}
+}

@@ -23,7 +23,7 @@ function HomePage() {
 				</h3>
 				<h1 className={styles.heading2}>I'm, Kriti Bagga</h1>
 				<h3 className={styles.heading3}>
-					Front End Developer / UI Developer / Tester
+					Front End Developer / UI Developer
 				</h3>
 			</div>
 			<div className={styles.btn}>
