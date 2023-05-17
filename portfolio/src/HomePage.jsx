@@ -4,7 +4,6 @@ import React from "react";
 import photo from "./Images/PersonalPic.jpg";
 import pdf from "./Resume.pdf";
 
-
 function HomePage() {
 	return (
 		<div className={`${styles.homePage}`}>
@@ -22,9 +21,7 @@ function HomePage() {
 					HEY THERE 👋
 				</h3>
 				<h1 className={styles.heading2}>I'm, Kriti Bagga</h1>
-				<h3 className={styles.heading3}>
-					Front End Developer / UI Developer
-				</h3>
+				<h3 className={styles.heading3}>Front End Developer / UI Developer</h3>
 			</div>
 			<div className={styles.btn}>
 				<a
@@ -38,9 +35,6 @@ function HomePage() {
 					</span>
 				</a>
 			</div>
-
-
-
 		</div>
 	);
 }
