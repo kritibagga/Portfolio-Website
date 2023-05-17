@@ -2,10 +2,10 @@ import styles from "./NavBar.module.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import icons1 from "./Images/icon1.png";
+import Hamburger from "hamburger-react";
 
 const NavBar = () => {
-	const [visible, setVisible] = React.useState();
-	const [icon, SetIcon] = React.useState(true);
+	const [isOpen, setOpen] = React.useState(false);
 
 	return (
 		<>
@@ -15,22 +15,17 @@ const NavBar = () => {
 						<h1>My Portfolio</h1>
 					</div>
 					<span>
-						<button
-							className={styles.btn}
-							onClick={() => {
-								setVisible(!visible);
-								SetIcon(!icon);
-							}}>
-							{icon ? (
-								<i className='fa-solid fa-bars '> </i>
-							) : (
-								<i className='fa-solid fa-xmark '></i>
-							)}
+						<button className={styles.btn}>
+							<Hamburger
+								toggled={isOpen}
+								toggle={setOpen}
+								color="#000000"
+							/>
 						</button>
 					</span>
 				</div>
 
-				{visible && (
+				{isOpen && (
 					<div className={styles.mobileViewMenu}>
 						<ul>
 							<li className={styles.mobileViewListItems}>

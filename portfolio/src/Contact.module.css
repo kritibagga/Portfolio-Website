@@ -108,11 +108,14 @@
 	padding: 6rem;
 }
 
+.contactFooter {
+	position: fixed;
+}
+
 /* Mobile view */
 @media only screen and (max-width: 480px) {
 	.contactFooter {
 		display: flex;
-		position: absolute;
 		top: 37rem;
 		left: 5rem;
 	}
@@ -143,19 +146,19 @@
 /* Tablet view */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	.contactFooter {
-		display: flex;
-		flex-direction: row;
-		position: absolute;
-		top: 10rem;
-		left: 10rem;
+		top: 14rem;
+		left: -4rem;
+	}
+
+	.wrapper {
+		height: 100vh;
 	}
 }
 
 /* Laptop view */
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
 	.contactFooter {
-		position: absolute;
-		top: 30%;
+		top: 32%;
 		left: 26%;
 	}
 
@@ -172,8 +175,7 @@
 /* Desktop view */
 @media only screen and (min-width: 1441px) {
 	.contactFooter {
-		position: absolute;
-		top: 20%;
-		left: 20%;
+		left: 25%;
+		top: 25%;
 	}
 }

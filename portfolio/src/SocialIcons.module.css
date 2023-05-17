@@ -1,5 +1,5 @@
 .socialLinks {
-	position: absolute;
+	position: fixed;
 	left: 10%;
 	top: 43%;
 }
@@ -67,7 +67,6 @@
 /* Mobile view */
 @media only screen and (max-width: 480px) {
 	.socialLinks {
-		position: absolute;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -78,27 +77,29 @@
 }
 
 /* Tablet view */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
 	.socialLinks {
-		position: absolute;
-		top: 23%;
+		top: 27%;
 		left: 10%;
 	}
 }
 
-/* Laptop view */
-@media only screen and (min-width: 769px) and (max-width: 1440px) {
+/* Samall Laptop view */
+@media only screen and (min-width: 1024px) {
 	.socialLinks {
-		position: absolute;
-		left: 25%;
-		top: 41%;
+		left: 27%;
+		top: 43%;
 	}
 }
+
+
+
+
 
 /* Desktop view */
 @media only screen and (min-width: 1441px) {
 	.socialLinks {
-		left: 35%;
-		top: 32%;
+		left: 37%;
+		top: 33%;
 	}
 }
