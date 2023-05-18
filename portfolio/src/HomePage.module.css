@@ -9,6 +9,7 @@
 	text-align: center;
 	margin: 0 auto;
 	height: calc(100vh - 4.4rem);
+
 }
 
 .imageWrapper {
@@ -144,8 +145,6 @@
 	padding: 1rem;
 }
 
-
-
 @media only screen and (max-width: 480px) {
 	.heading2 {
 		font-size: xx-large;
@@ -158,13 +157,11 @@
 		padding-top: 20%;
 	}
 
-	.homePage{
-		margin-bottom:4rem;
+	.homePage {
+		margin-bottom: 4rem;
 	}
 }
 
-
 /* Tablet view */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-
 }

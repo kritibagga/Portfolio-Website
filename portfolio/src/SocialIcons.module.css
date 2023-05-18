@@ -1,7 +1,5 @@
 .socialLinks {
 	position: fixed;
-	left: 10%;
-	top: 43%;
 }
 
 .socialLinks li {
@@ -64,42 +62,78 @@
 	background: #0077b5;
 }
 
-/* Mobile view */
-@media only screen and (max-width: 480px) {
+/* Small Mobile view */
+@media only screen and (max-width: 320px) {
 	.socialLinks {
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-top: 20px;
-		left: 18%;
-		top: 70%;
+		left: 13vw;
+		top: 201vw;
+	}
+}
+
+/* Medium Mobile view */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+	.socialLinks {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		left: 19vw;
+		top: 166vw;
+	}
+}
+
+/* Large Mobile view */
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+	.socialLinks {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		left: 22vw;
+		top: 150vw;
+	}
+}
+/* Other Size */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.socialLinks {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		left: 33vw;
+		top: 86vw;
 	}
 }
 
 /* Tablet view */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 	.socialLinks {
-		top: 27%;
-		left: 10%;
+		top: 44vw;
+		left: 9vw;
 	}
 }
 
-/* Samall Laptop view */
-@media only screen and (min-width: 1024px) {
+/* Small Laptop view */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
 	.socialLinks {
-		left: 27%;
-		top: 43%;
+		left: 16vw;
+		top: 35vw;
 	}
 }
 
-
-
-
-
-/* Desktop view */
-@media only screen and (min-width: 1441px) {
+/* Large Laptop view */
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
 	.socialLinks {
-		left: 37%;
-		top: 33%;
+		left: 24vw;
+		top: 27vw;
+	}
+}
+
+/* Large Desktop view */
+@media only screen and (min-width: 2560px) {
+	.socialLinks {
+		left: 36vw;
+		top: 19vw;
 	}
 }

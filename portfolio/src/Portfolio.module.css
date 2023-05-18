@@ -18,24 +18,6 @@
 .background {
 	backdrop-filter: brightness(0.15);
 	-webkit-backdrop-filter: brightness(1);
-	position: relative;
-}
-
-.footerDropdown {
-	margin-left: 2rem;
-	color: white;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: flex-start;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.downArrow {
-	color: white;
-	font-size: 25px;
-	padding: 1.3rem;
 }
 
 .footerWrap {
