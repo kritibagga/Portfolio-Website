@@ -103,23 +103,21 @@
 	text-align: center;
 	background: aquamarine;
 	position: absolute;
-	top: 37%;
-	left: 37%;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
 	padding: 6rem;
 }
 
+.endPage + footer {
+	display: none;
+}
 .contactFooter {
 	position: fixed;
 }
 
 /* Mobile view */
 @media only screen and (max-width: 480px) {
-	.contactFooter {
-		display: flex;
-		top: 37rem;
-		left: 5rem;
-	}
-
 	.wrapper {
 		padding: 10px;
 		top: 13%;
@@ -133,9 +131,6 @@
 	.title h2 {
 		font-size: 3rem;
 	}
-	.endPage {
-		left: 9%;
-	}
 
 	.btn {
 		padding: 11px 28px;
@@ -143,39 +138,87 @@
 	}
 }
 
-/* Tablet view */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
-	.contactFooter {
-		top: 14rem;
-		left: -4rem;
-	}
-
-	.wrapper {
-		height: 100vh;
+/* Small Mobile view */
+@media only screen and (max-width: 320px) {
+	.contactFooter > ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		left: 13vw;
+		top: 183vw;
 	}
 }
 
-/* Laptop view */
-@media only screen and (min-width: 769px) and (max-width: 1440px) {
-	.contactFooter {
-		top: 32%;
-		left: 26%;
+/* Medium Mobile view */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+	.contactFooter > ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		left: 19vw;
+		top: 159vw;
 	}
+}
 
+/* Large Mobile view */
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+	.contactFooter > ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		left: 22vw;
+		top: 141vw;
+	}
+}
+/* Other Size */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+	.contactFooter > ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		left: 8vw;
+		top: 98vw;
+	}
+}
+
+/* Tablet view */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.contactFooter > ul {
+		top: 32vw;
+		left: 9vw;
+	}
 	.wrapper {
 		width: 100%;
 	}
+}
 
-	.endPage {
-		left: 30%;
-		padding: 7rem;
+/* Small Laptop view */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.contactFooter > ul {
+		left: 15vw;
+		top: 24vw;
+	}
+	.wrapper {
+		width: 100%;
 	}
 }
 
-/* Desktop view */
-@media only screen and (min-width: 1441px) {
-	.contactFooter {
-		left: 25%;
-		top: 25%;
+/* Large Laptop view */
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+	.contactFooter > ul {
+		left: 24vw;
+		top: 17vw;
+	}
+	.wrapper {
+		width: 100%;
+	}
+}
+
+/* Large Desktop view */
+@media only screen and (min-width: 2560px) {
+	.contactFooter > ul {
+		left: 10vw;
+		top: 10vw;
 	}
 }

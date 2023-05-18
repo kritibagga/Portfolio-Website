@@ -42,64 +42,65 @@ const ContactForm = () => {
 	}
 
 	return (
-		<div className={`${styles.wrapper} animation`}>
-			<div className={styles.title}>
-				<h2>
-					Send Me A <span>Message</span>
-					<span className={styles.bgText}>Contact</span>
-				</h2>
-			</div>
-			<p className={styles.headingPara}>
-				Get in touch or shoot me email directly on
-				<a href='mailto:bagga.kriti@gmail.com'> bagga.kriti@gmail.com</a>
-			</p>
-			<div className={styles.section1}>
-				<form
-					className={styles.form}
-					action={FORM_ENDPOINT}
-					onSubmit={handleSubmit}
-					method='POST'
-					target='_blank'>
-					<div className={`${styles.inputControl} ${styles.ic}`}>
-						<input
-							type='text'
-							name='name'
-							required
-							placeholder='YOUR NAME'
-						/>
-						<input
-							type='email'
-							name='email'
-							required
-							placeholder='YOUR EMAIL'
-						/>
-					</div>
+		<>
+			<div className={`${styles.wrapper} animation`}>
+				<div className={styles.title}>
+					<h2>
+						Send Me A <span>Message</span>
+						<span className={styles.bgText}>Contact</span>
+					</h2>
+				</div>
+				<p className={styles.headingPara}>
+					Get in touch or shoot me email directly on
+					<a href='mailto:bagga.kriti@gmail.com'> bagga.kriti@gmail.com</a>
+				</p>
 
-					<div className={styles.inputControl}>
-						<textarea
-							name='message'
-							cols='15'
-							rows='8'
-							placeholder='Message Here...'></textarea>
-					</div>
+				<div className={styles.section1}>
+					<form
+						className={styles.form}
+						action={FORM_ENDPOINT}
+						onSubmit={handleSubmit}
+						method='POST'
+						target='_blank'>
+						<div className={`${styles.inputControl} ${styles.ic}`}>
+							<input
+								type='text'
+								name='name'
+								required
+								placeholder='YOUR NAME'
+							/>
+							<input
+								type='email'
+								name='email'
+								required
+								placeholder='YOUR EMAIL'
+							/>
+						</div>
 
-					<div className={styles.btnWrapper}>
-						<button
-							onClick={handleClick}
-							type='submit'
-							className={styles.btn}>
-							{text}
-							<i
-								className={icon}
-								style={style}></i>
-						</button>
-					</div>
-				</form>
+						<div className={styles.inputControl}>
+							<textarea
+								name='message'
+								cols='15'
+								rows='8'
+								placeholder='Message Here...'></textarea>
+						</div>
+
+						<div className={styles.btnWrapper}>
+							<button
+								onClick={handleClick}
+								type='submit'
+								className={styles.btn}>
+								{text}
+								<i
+									className={icon}
+									style={style}></i>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div className={styles.contactFooter}><SocialIcons /></div>
 			</div>
-			<div className={styles.contactFooter}>
-				<SocialIcons />
-			</div>
-		</div>
+		</>
 	);
 };
 

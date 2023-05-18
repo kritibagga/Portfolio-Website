@@ -30,45 +30,46 @@ function Portfolio() {
 			<h1 className={styles.loaderText}>Loading.....</h1>
 		</div>
 	) : (
-		<div className={styles.background}>
-			<NavBar />
+		<>
+			<main className={styles.background}>
+				<NavBar />
 
-			<Routes>
-				<Route
-					path='/'
-					element={
-						<>
-							<HomePage /> <SocialIcons />
-						</>
-					}
-				/>
-				<Route
-					path='/home'
-					element={
-						<>
-							<HomePage /> <SocialIcons />
-						</>
-					}
-				/>
+				<Routes>
+					<Route
+						path='/'
+						element={
+							<>
+								<HomePage /> <SocialIcons />
+							</>
+						}
+					/>
+					<Route
+						path='/home'
+						element={
+							<>
+								<HomePage /> <SocialIcons />
+							</>
+						}
+					/>
 
-				<Route
-					path='/home/about'
-					element={<AboutMe />}
-				/>
-				<Route
-					path='/home/contact'
-					element={<Contact />}
-				/>
-				<Route
-					path='/home/project'
-					element={<Project />}
-				/>
-			</Routes>
-
-			<div className={styles.footerWrap}>
-				<Footer />
-			</div>
-		</div>
+					<Route
+						path='/home/about'
+						element={<AboutMe />}
+					/>
+					<Route
+						path='/home/contact'
+						element={<Contact />}
+					/>
+					<Route
+						path='/home/project'
+						element={<Project />}
+					/>
+				</Routes>
+				<footer className={styles.footerWrap}>
+					<Footer />
+				</footer>
+			</main>
+		</>
 	);
 }
 

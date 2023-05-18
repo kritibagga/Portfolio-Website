@@ -10,6 +10,7 @@
 	position: absolute;
 	bottom:0;
 
+
 }
 .linkWrapper {
 	display: flex;
@@ -93,33 +94,34 @@
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
-    .footer{
-        flex-direction: column;
+	.footer {
+		flex-direction: column;
 		padding: 10px;
-    }
-    .leftNav{
-        margin:0;
-    }
-    .linkWrapper{
-        margin-bottom: 1rem;
-    }
-    .icons{
-        margin:0;
-    }
+	}
+	.leftNav {
+		margin: 0;
+	}
+	.linkWrapper {
+		margin-bottom: 1rem;
+	}
+	.icons {
+		margin: 0;
+	}
 
-	.linkWrapper a{
+	.linkWrapper a {
 		font-size: 12px;
 	}
 
-	.leftNav img{
+	.leftNav img {
 		width: 40px;
 	}
 
-	.icons a i,.locationIcon{
+	.icons a i,
+	.locationIcon {
 		font-size: 25px;
 	}
 
-	.locationToolTip{
+	.locationToolTip {
 		bottom: 3rem;
 		background-color: black;
 	}
@@ -127,26 +129,25 @@
 
 /* Tablet View */
 @media only screen and (min-width: 480px) and (max-width: 768px) {
-    .locationToolTip{
-        bottom:5rem;
-    }
+	.locationToolTip {
+		bottom: 5rem;
+	}
 
-    .leftNav{
-        margin-left: 0.5rem;
-    }
-    .icons{
-        margin-right: 1rem;
-    }
+	.leftNav {
+		margin-left: 0.5rem;
+	}
+	.icons {
+		margin-right: 1rem;
+	}
 }
-
 
 /* Laptop View */
 @media only screen and (min-width: 769px) and (max-width: 1440px) {
-	.leftNav img{
-		margin:0;
+	.leftNav img {
+		margin: 0;
 	}
 
-	.leftWrapper{
-		font-size:small;
+	.leftWrapper {
+		font-size: small;
 	}
 }
