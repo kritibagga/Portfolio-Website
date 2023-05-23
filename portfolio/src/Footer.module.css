@@ -95,6 +95,7 @@
 	.footer {
 		flex-direction: column;
 		padding: 10px;
+		position: static;
 	}
 	.leftNav {
 		margin: 0;
