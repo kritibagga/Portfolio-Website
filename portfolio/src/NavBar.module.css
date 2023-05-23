@@ -127,10 +127,8 @@
 
 	.btn {
 		background: none;
-		border-width: initial;
 		border-style: none;
-		border-color: initial;
-		border-image: initial;
+		border: none;
 	}
 
 	.mobileViewMenu {
