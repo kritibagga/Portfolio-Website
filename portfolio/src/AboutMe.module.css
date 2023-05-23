@@ -50,8 +50,10 @@
 }
 
 .introImage img {
-	width: 200px;
-	height: 200px;
+	display: block; /* Ensures the image behaves as a block element */
+	width: 100%; /* Sets the width to fill its container */
+	height: auto; /* Automatically adjusts the height to maintain aspect ratio */
+	object-fit: cover;
 }
 
 .scrollText {
@@ -89,5 +91,28 @@
 
 	.bgText {
 		font-size: 3rem;
+	}
+}
+
+/* Large Laptop view */
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
+	.introPara {
+		font-size: 1.2vw;
+	}
+}
+
+/* Large Desktop view */
+@media only screen and (min-width: 2560px) {
+	.introImage {
+		height: auto;
+		width: 50%;
+	}
+
+	.introPara {
+		font-size: 1.5rem;
+	}
+
+	.para {
+		margin-top: 1rem;
 	}
 }

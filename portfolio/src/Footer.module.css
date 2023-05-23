@@ -8,9 +8,7 @@
 	align-items: center;
 	border-top: 1px solid #8080808a;
 	position: absolute;
-	bottom:0;
-
-
+	bottom: 0;
 }
 .linkWrapper {
 	display: flex;
@@ -127,8 +125,8 @@
 	}
 }
 
-/* Tablet View */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/* Tablet view */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 	.locationToolTip {
 		bottom: 5rem;
 	}
@@ -141,13 +139,26 @@
 	}
 }
 
-/* Laptop View */
-@media only screen and (min-width: 769px) and (max-width: 1440px) {
+/* Small Laptop view */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+	.locationToolTip {
+		bottom: 5rem;
+	}
+}
+/* Large Laptop view */
+@media only screen and (min-width: 1440px) and (max-width: 2559px) {
 	.leftNav img {
 		margin: 0;
 	}
 
 	.leftWrapper {
 		font-size: small;
+	}
+}
+
+/* Large Desktop view */
+@media only screen and (min-width: 2560px) {
+	.locationToolTip {
+		bottom: 5rem;
 	}
 }
