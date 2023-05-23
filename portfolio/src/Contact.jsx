@@ -96,9 +96,12 @@ const ContactForm = () => {
 									style={style}></i>
 							</button>
 						</div>
+						<div className={styles.contactFooter}>
+						<SocialIcons />
+					</div>
 					</form>
+
 				</div>
-				<div className={styles.contactFooter}><SocialIcons /></div>
 			</div>
 		</>
 	);

@@ -82,6 +82,7 @@
 
 .form {
 	margin: 0 auto;
+	position: relative;
 }
 
 .btnWrapper {
@@ -113,7 +114,10 @@
 	display: none;
 }
 .contactFooter {
-	position: fixed;
+	position: absolute;
+	top: 0;
+	left: -27%;
+	bottom: 0;
 }
 
 /* Mobile view */
@@ -135,89 +139,8 @@
 		padding: 11px 28px;
 		font-size: 1rem;
 	}
-}
-
-/* Small Mobile view */
-@media only screen and (max-width: 320px) {
-	.contactFooter > ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		left: 13vw;
-		top: 183vw;
-	}
-}
-
-/* Medium Mobile view */
-@media only screen and (min-width: 321px) and (max-width: 375px) {
-	.contactFooter > ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		left: 19vw;
-		top: 159vw;
-	}
-}
-
-/* Large Mobile view */
-@media only screen and (min-width: 376px) and (max-width: 480px) {
-	.contactFooter > ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		left: 22vw;
-		top: 141vw;
-	}
-}
-/* Other Size */
-
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-	.contactFooter > ul {
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		left: 8vw;
-		top: 98vw;
-	}
-}
-
-/* Tablet view */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-	.contactFooter > ul {
-		top: 32vw;
-		left: 9vw;
-	}
-	.wrapper {
-		width: 100%;
-	}
-}
-
-/* Small Laptop view */
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {
-	.contactFooter > ul {
-		left: 15vw;
-		top: 24vw;
-	}
-	.wrapper {
-		width: 100%;
-	}
-}
-
-/* Large Laptop view */
-@media only screen and (min-width: 1440px) and (max-width: 2559px) {
-	.contactFooter > ul {
-		left: 24vw;
-		top: 17vw;
-	}
-	.wrapper {
-		width: 100%;
-	}
-}
-
-/* Large Desktop view */
-@media only screen and (min-width: 2560px) {
-	.contactFooter > ul {
-		left: 10vw;
-		top: 10vw;
+	.contactFooter {
+		transform: translate(21%, 107%);
+		left: 0;
 	}
 }

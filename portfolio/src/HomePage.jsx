@@ -3,6 +3,7 @@ import React from "react";
 
 import photo from "./Images/PersonalPic.jpg";
 import pdf from "./Resume.pdf";
+import SocialIcons from "./SocialIcons.jsx";
 
 function HomePage() {
 	return (
@@ -14,7 +15,7 @@ function HomePage() {
 					alt='myphoto'
 				/>
 			</div>
-			<div>
+			<div className={styles.content}>
 				<h3
 					data-aos='zoom-in'
 					className={styles.heading1}>
@@ -22,7 +23,11 @@ function HomePage() {
 				</h3>
 				<h1 className={styles.heading2}>I'm, Kriti Bagga</h1>
 				<h3 className={styles.heading3}>Front End Developer / UI Developer</h3>
+				<div className={styles.socialIconsHomePage}>
+				<SocialIcons />
 			</div>
+			</div>
+
 			<div className={styles.btn}>
 				<a
 					className={styles.btnLink}

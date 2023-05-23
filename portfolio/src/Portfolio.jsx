@@ -2,7 +2,6 @@ import styles from "./Portfolio.module.css";
 import React from "react";
 import HomePage from "./HomePage.jsx";
 import NavBar from "./NavBar.jsx";
-import SocialIcons from "./SocialIcons.jsx";
 import AboutMe from "./AboutMe.jsx";
 import Project from "./Project.jsx";
 import Contact from "./Contact.jsx";
@@ -39,7 +38,7 @@ function Portfolio() {
 						path='/'
 						element={
 							<>
-								<HomePage /> <SocialIcons />
+								<HomePage />
 							</>
 						}
 					/>
@@ -47,7 +46,7 @@ function Portfolio() {
 						path='/home'
 						element={
 							<>
-								<HomePage /> <SocialIcons />
+								<HomePage />
 							</>
 						}
 					/>
