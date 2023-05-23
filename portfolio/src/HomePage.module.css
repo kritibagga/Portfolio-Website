@@ -9,7 +9,6 @@
 	text-align: center;
 	margin: 0 auto;
 	height: calc(100vh - 4.4rem);
-
 }
 
 .imageWrapper {
@@ -37,18 +36,14 @@
 }
 
 .heading1 {
-	font-size: 16px;
+	font-size: 1rem;
 	margin: 0px auto;
 	padding: 20px 0px 10px;
 }
 
 .heading2 {
 	color: white;
-	margin: 0px auto;
 	padding: 0px 0px 10px;
-}
-
-.heading2 {
 	overflow: hidden;
 	border-right: 0.15em solid orange;
 	white-space: nowrap;
@@ -162,6 +157,19 @@
 	}
 }
 
-/* Tablet view */
-@media only screen and (min-width: 480px) and (max-width: 768px) {
+/* Large Desktop view */
+@media only screen and (min-width: 2560px) {
+	.heading1 {
+		font-size: 1.5rem;
+	}
+	.heading2 {
+		font-size: 3rem;
+	}
+	.heading3 {
+		font-size: 1.5rem;
+	}
+	.btnText {
+		font-size: 1.7rem;
+		padding: 0px 3rem;
+	}
 }
