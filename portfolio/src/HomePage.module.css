@@ -166,7 +166,10 @@
 		margin-bottom: 4rem;
 	}
 	.socialIconsHomePage {
-		transform: translate(65%, 148%);
+		bottom: 0;
+		left: 0;
+		top: 15rem;
+		right: 0;
 	}
 }
 
