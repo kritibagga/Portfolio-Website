@@ -1,7 +1,7 @@
 .wrapper {
 	width: 50%;
 	margin: 0 auto;
-	padding: 3rem 0 4rem 0;
+	padding: 3rem 0 4.4rem 0;
 	height: calc(100vh - 4.4rem);
 }
 
@@ -94,6 +94,7 @@
 	border-radius: 30px;
 	font-size: 1.5rem;
 	background-color: aquamarine;
+	color: black;
 }
 
 .btn i {
@@ -118,15 +119,16 @@
 	top: 0;
 	left: -27%;
 	bottom: 0;
+	right: 0;
 }
 
 /* Mobile view */
-@media only screen and (min-width: 375px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 	.wrapper {
 		padding: 10px;
 		width: 100%;
 		margin: 2rem 0 3rem 0;
-		height: calc(100vh + 1rem);
+		min-height: 100vh;
 	}
 
 	.title h2 {
@@ -134,39 +136,13 @@
 	}
 
 	.btn {
-		padding: 11px 28px;
+		padding: 1rem 3rem;
 		font-size: 1rem;
 	}
 	.contactFooter {
-		transform: translate(21%, 107%);
 		left: 0;
-	}
-}
-
-@media only screen and (max-width: 375px) {
-	.wrapper {
-		padding: 10px;
-		width: 100%;
-		margin: 2rem 0 3rem 0;
-		height: calc(100vh + 1rem);
-	}
-
-	.title h2 {
-		font-size: 3rem;
-	}
-
-	.btn {
-		padding: 11px 28px;
-		font-size: 1rem;
-	}
-	.contactFooter {
-		transform: translate(11%, 107%);
-	}
-}
-
-@media screen and (max-width: 320px) {
-	.contactFooter {
-		transform: translate(0%, 107%);
-		left: 0;
+		top: 24rem;
+		bottom: 0;
+		right: 0;
 	}
 }
