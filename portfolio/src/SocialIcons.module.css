@@ -64,5 +64,7 @@
 @media screen and (max-width: 480px) {
 	.socialLinks {
 		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
