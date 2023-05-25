@@ -1,25 +1,41 @@
 import styles from "./NavBar.module.css";
 import React from "react";
+import {useEffect }from "react";
 import { Link } from "react-router-dom";
 import icons1 from "./Images/icon1.png";
 import Hamburger from "hamburger-react";
+import headerIcon from "./Images/icon1.png";
 
 const NavBar = () => {
 	const [isOpen, setOpen] = React.useState(false);
+	const setTime = () => {
+		setOpen(false);
+	};
+
+	useEffect(() => {
+		if (isOpen) {
+		  document.body.style.overflow = 'hidden';
+		} else {
+		  document.body.style.overflow = 'unset';
+		}
+	  }, [isOpen]);
 
 	return (
 		<>
 			<div className={styles.dropdown}>
 				<div className={styles.heading}>
-					<div>
-						<h1>My Portfolio</h1>
+					<div className={styles.headerText}>
+						<img
+							src={headerIcon}
+							alt=''
+						/>
 					</div>
 					<span>
 						<button className={styles.btn}>
 							<Hamburger
 								toggled={isOpen}
 								toggle={setOpen}
-								color="#000000"
+								color='#7FFFD4'
 							/>
 						</button>
 					</span>
@@ -29,7 +45,9 @@ const NavBar = () => {
 					<div className={styles.mobileViewMenu}>
 						<ul>
 							<li className={styles.mobileViewListItems}>
-								<Link to='/home'>
+								<Link
+									to='/home'
+									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-house'></i>Home
 										<span></span>
@@ -40,7 +58,9 @@ const NavBar = () => {
 								</Link>
 							</li>
 							<li className={styles.mobileViewListItems}>
-								<Link to='/home/about'>
+								<Link
+									to='/home/about'
+									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-user'></i>About
 										<span></span>
@@ -51,7 +71,9 @@ const NavBar = () => {
 								</Link>
 							</li>
 							<li className={styles.mobileViewListItems}>
-								<Link to='/home/project'>
+								<Link
+									to='/home/project'
+									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-briefcase'></i>Projects
 										<span></span>
@@ -62,7 +84,9 @@ const NavBar = () => {
 								</Link>
 							</li>
 							<li className={styles.mobileViewListItems}>
-								<Link to='/home/contact'>
+								<Link
+									to='/home/contact'
+									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
 										<i className='fa-solid fa-address-card'></i>Contact
 										<span></span>
