@@ -51,11 +51,12 @@
 .locationIcon {
 	color: #0c0b0bb3;
 	font-size: 30px;
+	cursor: pointer;
 }
 
 .locationToolTip {
 	border: 1px solid grey;
-	opacity: 0;
+	color: aquamarine;
 	position: absolute;
 	bottom: 3%;
 	z-index: 1;
@@ -63,11 +64,6 @@
 	padding: 1rem;
 	right: 2rem;
 	bottom: 4rem;
-}
-
-.locationWrapper:hover .locationToolTip {
-	opacity: 1;
-	color: #81ebc8;
 }
 
 .leftNav {
@@ -121,7 +117,8 @@
 	}
 
 	.locationToolTip {
-		bottom: 3rem;
+		bottom: 4rem;
+		font-size: 12px;
 		background-color: black;
 	}
 }

@@ -2,8 +2,14 @@ import styles from "./Footer.module.css";
 import React from "react";
 import { Link } from "react-router-dom";
 import icons1 from "./Images/icon1.png";
+import { useState } from "react";
 
 export default function Footer() {
+	const [showLocation, setShowLocation] = useState(false);
+
+	function handleClick() {
+		setShowLocation(!showLocation);
+	}
 	return (
 		<div className={styles.footer}>
 			<div className={styles.leftNav}>
@@ -40,10 +46,15 @@ export default function Footer() {
 				</a>
 
 				<span className={styles.locationWrapper}>
-					<i className={`fa-solid fa-location-dot ${styles.locationIcon}`} />
-					<span className={styles.locationToolTip}>
-						Location: Toronto, ON, CA
-					</span>
+					<i
+						className={`fa-solid fa-location-dot ${styles.locationIcon}`}
+						onClick={handleClick}
+					/>
+					{showLocation && (
+						<span className={styles.locationToolTip}>
+							Location: Toronto, ON, CA
+						</span>
+					)}
 				</span>
 			</div>
 		</div>
