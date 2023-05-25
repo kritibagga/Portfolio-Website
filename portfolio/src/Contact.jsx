@@ -67,13 +67,13 @@ const ContactForm = () => {
 								type='text'
 								name='name'
 								required
-								placeholder='YOUR NAME'
+								placeholder='Your Name'
 							/>
 							<input
 								type='email'
 								name='email'
 								required
-								placeholder='YOUR EMAIL'
+								placeholder='Your Email'
 							/>
 						</div>
 
@@ -97,10 +97,9 @@ const ContactForm = () => {
 							</button>
 						</div>
 						<div className={styles.contactFooter}>
-						<SocialIcons />
-					</div>
+							<SocialIcons />
+						</div>
 					</form>
-
 				</div>
 			</div>
 		</>
