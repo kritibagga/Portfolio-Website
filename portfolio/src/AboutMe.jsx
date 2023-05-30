@@ -35,30 +35,44 @@ function AboutMe() {
 				<div className={styles.introduction}>
 					<div className={styles.introPara}>
 						<p className={styles.para}>
-							As a passionate front-end developer with over 4 years of
-							experience, I have a strong foundation in building high-performing
-							websites with exceptional user experiences. I have a deep
-							understanding of the latest web development technologies and
-							frameworks, and am dedicated to delivering high-quality and
-							reusable code that is easily maintainable.
+							Welcome to my portfolio website! I'm Kriti Bagga, a dedicated
+							frontend developer based in Toronto, CA. With over 4 years of
+							experience in the banking and digital marketing domains, I have
+							honed my skills in creating captivating web experiences. My
+							passion for coding and design led me to specialize in HTML5, CSS3,
+							and JavaScript, enabling me to bring ideas to life with
+							pixel-perfect precision. I thrive on solving complex problems,
+							finding innovative solutions, and delivering seamless user
+							interfaces.
 						</p>
 						<p className={styles.para}>
-							My expertise includes designing and developing custom websites,
-							web applications, and user interfaces using HTML, CSS, JavaScript,
-							React JS, and other technologies. I am experienced in implementing
-							responsive design, cross-browser compatibility, and accessibility
-							best practices to ensure that my projects are accessible to all
-							users.
+							As a lifelong learner, I stay up-to-date with the latest industry
+							trends and technologies, constantly expanding my knowledge to
+							deliver cutting-edge results. Collaborative by nature, I enjoy
+							working closely with cross-functional teams, translating ideas
+							into tangible products.
 						</p>
 						<p className={styles.para}>
-							I am highly collaborative, thrive in fast-paced environments, and
-							have a proven track record of delivering projects on time and
-							within budget. I am constantly learning and staying up-to-date
-							with the latest web development trends and technologies, and I am
-							always eager to take on new challenges and opportunities to grow
-							my skills. I am committed to making a positive impact in the web
-							development community and I am always looking for ways to give
-							back and share my knowledge with others.
+							Driven by attention to detail and a commitment to excellence, I
+							strive to create user-centric designs that provide delightful
+							experiences. I believe that the best websites blend aesthetics
+							with functionality, and I take pride in crafting intuitive
+							interfaces that leave a lasting impression.
+						</p>
+						<p className={styles.para}>
+							In my leisure time, you can find me indulging in my other
+							passions—painting and dancing. Painting allows me to express my
+							creativity on canvas, while dancing helps me find joy and
+							movement. These activities fuel my inspiration and provide a
+							well-rounded perspective that influences my work as a frontend
+							developer.
+						</p>
+
+						<p className={styles.para}>
+							Thank you for visiting my portfolio website. I invite you to
+							explore my work and connect with me to discuss exciting
+							opportunities. Let's collaborate and create remarkable experiences
+							together.
 						</p>
 					</div>
 					<div className={styles.introImage}>

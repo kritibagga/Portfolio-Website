@@ -13,7 +13,7 @@ export default function Timeline() {
 					<div className={styles.timelineIcon}>
 						<i className='fas fa-briefcase'></i>
 					</div>
-					<p className={styles.timelineDuration}>2021 - 2023</p>
+					<p className={styles.timelineDuration}>2021 - Present</p>
 					<h5 className={styles.itemHeading}>
 						Front-End Developer<span> - Agency Analytics</span>
 					</h5>

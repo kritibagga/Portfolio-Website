@@ -6,12 +6,12 @@ export default function Skills(props) {
 		{ title: "html5", percentage: 80, id: 1 },
 		{ title: "css3", percentage: 70, id: 2 },
 		{ title: "javascript", percentage: 70, id: 3 },
-		{ title: "reactjs", percentage: 60, id: 4 },
+		{ title: "react js", percentage: 60, id: 4 },
 		{ title: "github", percentage: 60, id: 5 },
 		{ title: "vscode", percentage: 70, id: 6 },
 		{ title: "sql", percentage: 40, id: 7 },
 		{ title: "selenium", percentage: 50, id: 8 },
-		{ title: "corejava", percentage: 40, id: 9 },
+		{ title: "core java", percentage: 40, id: 9 },
 		{ title: "hp-alm", percentage: 40, id: 10 },
 	];
 
