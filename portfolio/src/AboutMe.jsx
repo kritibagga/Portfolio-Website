@@ -3,6 +3,7 @@ import React from "react";
 import Skills from "./Skills.jsx";
 import Timeline from "./Timeline.jsx";
 import { useRef, useState, useEffect } from "react";
+import MyPhoto from "./Images/originalpic.jpg";
 
 function AboutMe() {
 	const [showIcon, setShowIcon] = useState(false);
@@ -34,55 +35,34 @@ function AboutMe() {
 			<section className={`${styles.aboutMeSection} animation`}>
 				<div className={styles.introduction}>
 					<div className={styles.introPara}>
+						<h1 className={styles.introHeading}>So, Who Am I?</h1>
 						<p className={styles.para}>
-							Welcome to my portfolio website! I'm Kriti Bagga, a dedicated
-							frontend developer based in Toronto, CA. With over 4 years of
-							experience in the banking and digital marketing domains, I have
-							honed my skills in creating captivating web experiences. My
-							passion for coding and design led me to specialize in HTML5, CSS3,
-							and JavaScript, enabling me to bring ideas to life with
-							pixel-perfect precision. I thrive on solving complex problems,
-							finding innovative solutions, and delivering seamless user
-							interfaces.
-						</p>
-						<p className={styles.para}>
-							As a lifelong learner, I stay up-to-date with the latest industry
-							trends and technologies, constantly expanding my knowledge to
-							deliver cutting-edge results. Collaborative by nature, I enjoy
-							working closely with cross-functional teams, translating ideas
-							into tangible products.
-						</p>
-						<p className={styles.para}>
-							Driven by attention to detail and a commitment to excellence, I
-							strive to create user-centric designs that provide delightful
-							experiences. I believe that the best websites blend aesthetics
-							with functionality, and I take pride in crafting intuitive
-							interfaces that leave a lasting impression.
-						</p>
-						<p className={styles.para}>
-							In my leisure time, you can find me indulging in my other
-							passions—painting and dancing. Painting allows me to express my
-							creativity on canvas, while dancing helps me find joy and
-							movement. These activities fuel my inspiration and provide a
-							well-rounded perspective that influences my work as a frontend
-							developer.
-						</p>
-
-						<p className={styles.para}>
-							Thank you for visiting my portfolio website. I invite you to
-							explore my work and connect with me to discuss exciting
-							opportunities. Let's collaborate and create remarkable experiences
-							together.
+							Hello, world! I'm Kriti, your happy-go-lucky ray of sunshine,
+							spreading joy and smiles wherever I go. With a heart full of
+							laughter and a spirit that dances to the rhythm of fun, I bring a
+							vibrant energy to every project. As a frontend developer with over 4 years of experience, I infuse
+							my work with a playful touch, creating delightful digital
+							experiences that leave users grinning from ear to ear. With a
+							perpetual smile on my face, I tackle challenges with enthusiasm
+							and embrace the joy of problem-solving. Life is too short not to
+							enjoy every moment, and I bring that same lightheartedness to my
+							work. I believe that when we love what we do, it reflects in the
+							quality of our creations. So, if you're looking for someone who
+							can inject a dose of excitement and create user experiences that
+							are as enjoyable as they are functional, I'm your go-to person.
+							Let's collaborate and bring some sunshine into the digital world
+							together!
 						</p>
 					</div>
 					<div className={styles.introImage}>
 						<img
-							src='https://img.freepik.com/free-vector/about-me-concept-illustration_114360-2991.jpg?w=2000'
+							src={MyPhoto}
 							alt='aboutmeimage'
 						/>
 					</div>
 				</div>
 			</section>
+
 			{showIcon && (
 				<p className={styles.scrollText}>
 					<i

@@ -1,16 +1,23 @@
 .aboutMeSection {
-	background-color: pink;
+	background-color: #fcad92;
 	width: 80%;
 	margin: 0 auto;
 	padding: 4%;
 	margin-top: 4rem;
 	text-align: justify;
+	border-radius: 2rem;
+	box-shadow:0.5rem 0.5rem white;
+
 }
 
 .introduction {
 	display: flex;
 	align-items: center;
 	flex-direction: row-reverse;
+}
+
+.introduction{
+	font-family: "Montserrat";
 }
 
 .title h2 {
@@ -47,6 +54,8 @@
 
 .introImage {
 	margin-right: 5%;
+	-webkit-box-shadow: 7px 7px 19px 2px #000000;
+	box-shadow: 7px 7px 19px 2px #000000;
 }
 
 .introImage img {
@@ -61,6 +70,15 @@
 	text-align: center;
 	margin-top: 2rem;
 	font-size: 20px;
+}
+
+.introHeading{
+	font-family: sans-serif;
+    font-size: 2rem;
+    color: #38255d;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+	text-shadow: 0.1rem 0.1rem black;;
 }
 
 @media only screen and (max-width: 480px) {
@@ -92,12 +110,16 @@
 	.bgText {
 		font-size: 3rem;
 	}
+	.introPara{
+		margin-top:3rem;
+
+	}
 }
 
 /* Large Laptop view */
 @media only screen and (min-width: 1440px) and (max-width: 2559px) {
 	.introPara {
-		font-size: 1.2vw;
+		font-size: 1rem;
 	}
 }
 
