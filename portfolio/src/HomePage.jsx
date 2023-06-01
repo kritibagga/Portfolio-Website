@@ -24,8 +24,8 @@ function HomePage() {
 				<h1 className={styles.heading2}>I'm, Kriti Bagga</h1>
 				<h3 className={styles.heading3}>Front End Developer / UI Developer</h3>
 				<div className={styles.socialIconsHomePage}>
-				<SocialIcons />
-			</div>
+					<SocialIcons />
+				</div>
 			</div>
 
 			<div className={styles.btn}>
@@ -34,7 +34,7 @@ function HomePage() {
 					href={pdf}
 					target='_blank'
 					rel='noreferrer'>
-					<span className={styles.btnText}>Download CV</span>
+					<span className={styles.btnText}>Download Resume</span>
 					<span className={styles.btnIcon}>
 						<i className='fas fa-download'></i>
 					</span>
