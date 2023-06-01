@@ -23,6 +23,11 @@
 	padding: 10px 20px 10px 0;
 	font-weight: bold;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.linkWrapper a:nth-child(1),
+.linkWrapper a:nth-child(2),
+.linkWrapper a:nth-child(3) {
 	border-right: 1px solid black;
 }
 
@@ -109,6 +114,7 @@
 
 	.leftNav img {
 		width: 40px;
+		margin-right: 0;
 	}
 
 	.icons a i,
