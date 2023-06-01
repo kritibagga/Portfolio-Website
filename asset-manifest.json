@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.1d4fb065.css",
-    "main.js": "/Portfolio-Website/static/js/main.7341ebf4.js",
+    "main.css": "/Portfolio-Website/static/css/main.bd39b52e.css",
+    "main.js": "/Portfolio-Website/static/js/main.ee73acd2.js",
     "static/media/weather-app.png": "/Portfolio-Website/static/media/weather-app.a67315a66533196a50dd.png",
     "static/media/Calculator App.png": "/Portfolio-Website/static/media/Calculator App.879095661fd6fd0460a7.png",
+    "static/media/originalpic.jpg": "/Portfolio-Website/static/media/originalpic.91342c6cac95e81d20be.jpg",
     "static/media/PersonalPic.jpg": "/Portfolio-Website/static/media/PersonalPic.8fe777f7d243bf78d9d7.jpg",
     "static/media/portfolioImage.png": "/Portfolio-Website/static/media/portfolioImage.f50877e27a5cfcc21ec6.png",
     "static/media/Resume.pdf": "/Portfolio-Website/static/media/Resume.20a3cc6da67509781f62.pdf",
     "static/media/loader.png": "/Portfolio-Website/static/media/loader.03a6571f7c5170449a64.png",
     "static/media/backgroundImage-1.jpg": "/Portfolio-Website/static/media/backgroundImage-1.a57527eadd0db56d4d80.jpg",
     "index.html": "/Portfolio-Website/index.html",
-    "main.1d4fb065.css.map": "/Portfolio-Website/static/css/main.1d4fb065.css.map",
-    "main.7341ebf4.js.map": "/Portfolio-Website/static/js/main.7341ebf4.js.map"
+    "main.bd39b52e.css.map": "/Portfolio-Website/static/css/main.bd39b52e.css.map",
+    "main.ee73acd2.js.map": "/Portfolio-Website/static/js/main.ee73acd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d4fb065.css",
-    "static/js/main.7341ebf4.js"
+    "static/css/main.bd39b52e.css",
+    "static/js/main.ee73acd2.js"
   ]
 }
