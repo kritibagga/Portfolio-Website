@@ -24,21 +24,19 @@ export default function Skills(props) {
 			<div className={`${styles.aboutStats} `}>
 				<h4 className={styles.statTitle}>My Skills</h4>
 				<div className={styles.progressBars}>
-					{skillObject.map((item) => {
-						return (
-							<div
-								key={item.id}
-								className={styles.progressBar}>
-								<p className={styles.progTitle}>{item.title}</p>
-								<div className={styles.progContent}>
-									<p className={styles.progText}>{item.percentage}%</p>
-									<div className={styles.progress}>
-										<span style={{ width: `${item.percentage}%` }}></span>
-									</div>
+					{skillObject.map((item) => (
+						<div
+							key={item.title}
+							className={styles.progressBar}>
+							<p className={styles.progTitle}>{item.title}</p>
+							<div className={styles.progContent}>
+								<p className={styles.progText}>{item.percentage}%</p>
+								<div className={styles.progress}>
+									<span style={{ width: `${item.percentage}%` }}></span>
 								</div>
 							</div>
-						);
-					})}
+						</div>
+					))}
 				</div>
 			</div>
 		</div>

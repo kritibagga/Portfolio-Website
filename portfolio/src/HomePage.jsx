@@ -7,7 +7,7 @@ import SocialIcons from "./SocialIcons.jsx";
 
 function HomePage() {
 	return (
-		<div className={`${styles.homePage}`}>
+		<main className={styles.homePage}>
 			<div className={styles.imageWrapper}>
 				<img
 					className={styles.profileImage}
@@ -16,12 +16,12 @@ function HomePage() {
 				/>
 			</div>
 			<div className={styles.content}>
-				<h3
+				<p
 					data-aos='zoom-in'
 					className={styles.heading1}>
 					HEY THERE 👋
-				</h3>
-				<h1 className={styles.heading2}>I'm, Kriti Bagga</h1>
+				</p>
+				<h1 className={styles.heading2}>I'm Kriti Bagga</h1>
 				<h3 className={styles.heading3}>Front End Developer / UI Developer</h3>
 				<div className={styles.socialIconsHomePage}>
 					<SocialIcons />
@@ -40,7 +40,7 @@ function HomePage() {
 					</span>
 				</a>
 			</div>
-		</div>
+		</main>
 	);
 }
 
