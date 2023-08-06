@@ -14,8 +14,8 @@ function Project() {
 				</h2>
 			</div>
 			<p className={styles.portText}>
-				Here are some of my work which i have done using Html, Css, JavaScript,
-				ReactJS .
+				Here are some of my work which I have done using HTML, CSS, JavaScript,
+				ReactJS.
 			</p>
 			<div
 				className={styles.portfolios}
@@ -25,7 +25,7 @@ function Project() {
 					<div className={styles.image}>
 						<img
 							src={weatherAPP}
-							alt='weather app'
+							alt='Weather App Project'
 						/>
 						<h1 className={styles.captions}>Weather App</h1>
 					</div>
@@ -49,7 +49,7 @@ function Project() {
 					<div className={styles.image}>
 						<img
 							src={CalculatorImage}
-							alt=''
+							alt='Calculator Project'
 						/>
 						<h1 className={styles.captions}>Calculator</h1>
 					</div>
@@ -73,7 +73,7 @@ function Project() {
 					<div className={styles.image}>
 						<img
 							src={PortfolioImage}
-							alt=''
+							alt='Portfolio Project'
 						/>
 						<h1 className={styles.captions}>Portfolio</h1>
 					</div>
@@ -94,4 +94,5 @@ function Project() {
 		</section>
 	);
 }
+
 export default Project;

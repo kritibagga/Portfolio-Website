@@ -1,24 +1,23 @@
 import styles from "./NavBar.module.css";
-import React from "react";
-import {useEffect }from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import icons1 from "./Images/icon1.png";
 import Hamburger from "hamburger-react";
 import headerIcon from "./Images/icon1.png";
 
 const NavBar = () => {
-	const [isOpen, setOpen] = React.useState(false);
+	const [isOpen, setOpen] = useState(false);
 	const setTime = () => {
 		setOpen(false);
 	};
 
 	useEffect(() => {
 		if (isOpen) {
-		  document.body.style.overflow = 'hidden';
+			document.body.style.overflow = "hidden";
 		} else {
-		  document.body.style.overflow = 'unset';
+			document.body.style.overflow = "unset";
 		}
-	  }, [isOpen]);
+	}, [isOpen]);
 
 	return (
 		<>
@@ -27,7 +26,7 @@ const NavBar = () => {
 					<div className={styles.headerText}>
 						<img
 							src={headerIcon}
-							alt=''
+							alt='Header Icon'
 						/>
 					</div>
 					<span>
@@ -49,7 +48,7 @@ const NavBar = () => {
 									to='/home'
 									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
-										<i className='fa-solid fa-house'></i>Home
+										<i className='fas fa-home'></i>Home
 										<span></span>
 										<span></span>
 										<span></span>
@@ -62,7 +61,7 @@ const NavBar = () => {
 									to='/home/about'
 									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
-										<i className='fa-solid fa-user'></i>About
+										<i className='fas fa-user'></i>About
 										<span></span>
 										<span></span>
 										<span></span>
@@ -75,7 +74,7 @@ const NavBar = () => {
 									to='/home/project'
 									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
-										<i className='fa-solid fa-briefcase'></i>Projects
+										<i className='fas fa-briefcase'></i>Projects
 										<span></span>
 										<span></span>
 										<span></span>
@@ -88,7 +87,7 @@ const NavBar = () => {
 									to='/home/contact'
 									onClick={() => setTimeout(setTime, 1000)}>
 									<p className={styles.mobileButton}>
-										<i className='fa-solid fa-address-card'></i>Contact
+										<i className='fas fa-address-card'></i>Contact
 										<span></span>
 										<span></span>
 										<span></span>
@@ -105,7 +104,7 @@ const NavBar = () => {
 					<div className={styles.leftWrapper}>
 						<img
 							src={icons1}
-							alt=''
+							alt='Kriti Bagga Icon'
 						/>
 						<span className={styles.nameIcon}>Kriti Bagga</span>
 					</div>
