@@ -35,3 +35,26 @@ html {
 		transform: translateY(0) scaleY(1);
 	}
 }
+
+/* variables */
+
+:root {
+	/* dark */
+	--dark-theme-color: aquamarine;
+	--dark-button-text: rgb(251, 37, 118);
+	--dark-nav-text: #9ca4ab;
+
+	/* Light */
+	--light-theme-color: darkgreen;
+	--light-heading1-color: #ff4040c2;
+	--light-heading2-color: #096dd9;
+	--light-heading3-color: #4c5dbe;
+	--light-download-button: #ff7f7f;
+	--light-social-icon: rgb(165 217 162);
+	--light-heading-background: #52c41a3b;
+	--light-heading-title: #407eb6;
+	--light-progress-bar: #cfcece;
+	--light-about-me-section: #f1f7ec;
+	--light-text-1: #2a2e35;
+	--light-contact-input: #87d59a;
+}

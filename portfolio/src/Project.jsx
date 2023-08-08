@@ -4,16 +4,25 @@ import weatherAPP from "./Images/weather-app.png";
 import CalculatorImage from "./Images/Calculator App.png";
 import PortfolioImage from "./Images/portfolioImage.png";
 
-function Project() {
+function Project(props) {
+	const titleStyle = props.theme ? styles.lightTitle : styles.title;
 	return (
 		<section className={`${styles.container} animation`}>
-			<div className={styles.title}>
+			<div className={titleStyle}>
 				<h2>
 					My <span>Portfolio</span>
-					<span className={styles.bgText}>My Work</span>
+					<span
+						className={
+							props.theme ? `${styles.lightBgText}` : `${styles.bgText}`
+						}>
+						My Work
+					</span>
 				</h2>
 			</div>
-			<p className={styles.portText}>
+			<p
+				className={
+					props.theme ? `${styles.lightPortText}` : `${styles.portText}`
+				}>
 				Here are some of my work which I have done using HTML, CSS, JavaScript,
 				ReactJS.
 			</p>
@@ -27,7 +36,12 @@ function Project() {
 							src={weatherAPP}
 							alt='Weather App Project'
 						/>
-						<h1 className={styles.captions}>Weather App</h1>
+						<h1
+							className={
+								props.theme ? `${styles.lightCaptions}` : `${styles.captions}`
+							}>
+							Weather App
+						</h1>
 					</div>
 					<div className={styles.hoverItems}>
 						<h3>Project Source</h3>
@@ -51,7 +65,12 @@ function Project() {
 							src={CalculatorImage}
 							alt='Calculator Project'
 						/>
-						<h1 className={styles.captions}>Calculator</h1>
+						<h1
+							className={
+								props.theme ? `${styles.lightCaptions}` : `${styles.captions}`
+							}>
+							Calculator
+						</h1>
 					</div>
 					<div className={styles.hoverItems}>
 						<h3>Project Source</h3>
@@ -75,7 +94,12 @@ function Project() {
 							src={PortfolioImage}
 							alt='Portfolio Project'
 						/>
-						<h1 className={styles.captions}>Portfolio</h1>
+						<h1
+							className={
+								props.theme ? `${styles.lightCaptions}` : `${styles.captions}`
+							}>
+							Portfolio
+						</h1>
 					</div>
 					<div className={styles.hoverItems}>
 						<h3>Project Source</h3>

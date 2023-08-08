@@ -14,45 +14,65 @@
 	flex-direction: column;
 }
 
-.progTitle {
+.progTitle,
+.lightProgTitle {
 	text-transform: uppercase;
 	font-weight: 500;
 	color: white;
+}
+.lightProgTitle {
+	color: black;
 }
 .progContent {
 	display: flex;
 	align-items: center;
 }
 
-.progText {
+.progText,
+.lightProgText {
 	color: #b2becd;
 }
+.lightProgText {
+	color: black;
+}
 
-.progress {
+.progress,
+.lightProgress {
 	width: 100%;
 	height: 0.45rem;
 	background-color: #454e56;
 	margin-left: 1rem;
 	position: relative;
 }
+.lightProgress {
+	background-color: var(--light-progress-bar);
+}
 
-.progress span {
+.progress span,
+.lightProgress span {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
-	background-color: aquamarine;
+	background-color: var(--dark-theme-color);
 	transition: all 0.4s ease-in-out;
 	width: 60%;
 }
+.lightProgress span {
+	background-color: var(--light-theme-color);
+}
 
-.statTitle {
+.statTitle,
+.lightStatTitle {
 	text-transform: uppercase;
 	font-size: 1.4rem;
 	text-align: center;
 	padding: 3.5rem 0;
 	position: relative;
 	color: white;
+}
+.lightStatTitle {
+	color: black;
 }
 
 .break {
@@ -75,7 +95,8 @@
 
 /* Large Desktop view */
 @media only screen and (min-width: 2560px) {
-	.statTitle {
+	.statTitle,
+	.lightStatTitle {
 		font-size: 2.3rem;
 	}
 	.progressBars {

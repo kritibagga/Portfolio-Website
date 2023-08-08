@@ -4,7 +4,7 @@ import Timeline from "./Timeline.jsx";
 import MyPhoto from "./Images/originalpic.jpg";
 import styles from "./AboutMe.module.css";
 
-function AboutMe() {
+function AboutMe(props) {
 	const [showIcon, setShowIcon] = useState(false);
 	const [viewPortHeight, setViewPortHeight] = useState(window.innerHeight);
 
@@ -13,6 +13,10 @@ function AboutMe() {
 	const scrollClick = () => {
 		ref.current?.scrollIntoView({ behavior: "smooth" });
 	};
+	const titleStyle = props.theme ? styles.lightTitle : styles.title;
+	const aboutMeSectionStyle = props.theme
+		? styles.lightAboutMe
+		: styles.aboutMeSection;
 
 	/* Scroll Icon Visibility */
 	useEffect(() => {
@@ -37,13 +41,18 @@ function AboutMe() {
 
 	return (
 		<main>
-			<div className={`${styles.title} animation`}>
+			<div className={`${titleStyle} animation`}>
 				<h2>
 					About <span>Me</span>
-					<span className={styles.bgText}>My Intro</span>
+					<span
+						className={
+							props.theme ? `${styles.lightBgText}` : `${styles.bgText}`
+						}>
+						My Intro
+					</span>
 				</h2>
 			</div>
-			<section className={`${styles.aboutMeSection} animation`}>
+			<section className={`${aboutMeSectionStyle} animation`}>
 				<div className={styles.introduction}>
 					<div className={styles.introPara}>
 						<h1 className={styles.introHeading}>So, Who Am I?</h1>
@@ -75,15 +84,21 @@ function AboutMe() {
 			</section>
 
 			{showIcon && (
-				<p className={styles.scrollText}>
+				<p
+					className={
+						props.theme ? `${styles.lightscrollText}` : `${styles.scrollText}`
+					}>
 					<i
 						onClick={scrollClick}
 						className='fas fa-angles-down'
 					/>
 				</p>
 			)}
-			<Skills reference={ref} />
-			<Timeline />
+			<Skills
+				reference={ref}
+				theme={props.theme}
+			/>
+			<Timeline theme={props.theme} />
 		</main>
 	);
 }

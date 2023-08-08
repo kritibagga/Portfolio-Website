@@ -6,13 +6,17 @@
 	border-bottom: 5px dotted grey;
 }
 
-.title {
+.title,
+.lightTitle {
 	text-transform: uppercase;
 	font-size: 1.4rem;
 	text-align: center;
 	padding: 3.5rem 0;
 	position: relative;
 	color: white;
+}
+.lightTitle {
+	color: black;
 }
 
 .timeline {
@@ -28,17 +32,21 @@
 	padding-left: 3rem;
 	border-left: 1px solid #2a2e35;
 }
-.timelineIcon {
+.timelineIcon,
+.lightTimeLineIcon {
 	position: absolute;
 	left: -27px;
 	top: 0;
-	background-color: aquamarine;
+	background-color: var(--dark-theme-color);
 	width: 50px;
 	height: 50px;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.lightTimeLineIcon {
+	background-color: var(--light-social-icon);
 }
 .timelineIcon i {
 	font-size: 1.3rem;
@@ -52,13 +60,18 @@
 	text-transform: uppercase;
 	font-weight: 500;
 }
-.itemHeading {
+.itemHeading,
+.lightItemHeading {
 	padding: 1rem 0;
 	text-transform: uppercase;
 	font-size: 1.3rem;
 	font-weight: 600;
 	color: white;
 }
+.lightItemHeading {
+	color: black;
+}
+
 .itemHeading span {
 	color: #b2becd;
 	font-weight: 500;
@@ -66,6 +79,9 @@
 }
 .timelineItem p {
 	color: #b2becd;
+}
+.lightItemHeading + p {
+	color: black;
 }
 
 /* Mobile View */

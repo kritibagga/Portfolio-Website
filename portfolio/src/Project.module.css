@@ -3,7 +3,8 @@
 	margin-bottom: 3rem;
 }
 
-.title h2 {
+.title h2,
+.lightTitle h2 {
 	position: relative;
 	text-transform: uppercase;
 	font-size: 4rem;
@@ -11,16 +12,26 @@
 	color: white;
 }
 
-.title h2 span:first-child {
-	color: aquamarine;
+.lightTitle h2 {
+	color: var(--light-heading-title);
 }
 
-.title {
+.title h2 span:first-child {
+	color: var(--dark-theme-color);
+}
+
+.lightTitle h2 span:first-child {
+	color: rgb(198 115 115);
+}
+
+.title,
+.lightTitle {
 	text-align: center;
 	margin-top: 3rem;
 }
 
-.bgText {
+.bgText,
+.lightBgText {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -32,10 +43,18 @@
 	font-size: 6.3rem;
 }
 
-.portText {
+.lightBgText {
+	color: var(--light-heading-background);
+}
+
+.portText,
+.lightPortText {
 	padding: 2rem 0;
 	text-align: center;
-	color: #9ca4ab;
+	color: var(--dark-nav-text);
+}
+.lightPortText {
+	color: var(--light-text-1);
 }
 
 .portfolios {
@@ -59,10 +78,15 @@
 	object-fit: contain;
 }
 
-.captions {
+.captions,
+.lightCaptions {
 	color: white;
 	text-align: center;
 	margin-top: 10px;
+}
+
+.lightCaptions {
+	color: var(--light-text-1);
 }
 
 .hoverItems {

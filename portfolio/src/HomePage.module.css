@@ -1,6 +1,5 @@
 .homePage {
 	align-items: center;
-	color: rgb(251, 37, 118);
 	display: flex;
 	flex-direction: column;
 	font-size: larger;
@@ -11,13 +10,14 @@
 	height: calc(100vh - 4.4rem);
 }
 
-.imageWrapper {
+.imageWrapper,
+.lightImageWrapper {
 	box-sizing: initial;
 	height: 200px;
 	width: 200px;
 	border-width: 5px;
 	border-style: solid;
-	border-color: rgb(127, 255, 212);
+	border-color: var(--dark-theme-color);
 	border-image: initial;
 	border-radius: 50%;
 	margin: 0px auto;
@@ -35,13 +35,16 @@
 	border-radius: 50%;
 }
 
-.heading1 {
+.heading1,
+.lightHeading1 {
 	font-size: 1rem;
 	margin: 0px auto;
 	padding: 20px 0px 10px;
+	color: var(--dark-button-text);
 }
 
-.heading2 {
+.heading2,
+.lightHeading2 {
 	color: white;
 	padding: 0px 0px 10px;
 	overflow: hidden;
@@ -73,8 +76,9 @@
 	}
 }
 
-.heading3 {
-	color: aquamarine;
+.heading3,
+.lightHeading3 {
+	color: var(--dark-theme-color);
 	font-size: 20px;
 	padding-bottom: 30px;
 	margin: 0px auto;
@@ -88,19 +92,21 @@
 	text-decoration: none;
 }
 
-.btnLink {
+.btnLink,
+.lightBtnLink {
 	border-radius: 30px;
 	color: #0a192f;
 	font-weight: 600;
 	position: relative;
-	border: 1px solid aquamarine;
+	border: 1px solid var(--dark-theme-color);
 	display: flex;
 	align-self: flex-start;
 	align-items: center;
 	overflow: hidden;
 }
 
-.btnLink::before {
+.btnLink::before,
+.lightBtnLink::before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -110,20 +116,23 @@
 	z-index: -1;
 }
 
-.btnLink:hover {
+.btnLink:hover,
+.lightBtnLink:hover {
 	transition: all 0.4s ease-out;
 }
 
-.btnLink:hover::before {
+.btnLink:hover::before,
+.lightBtnLink:hover::before {
 	width: 100%;
 	height: 100%;
-	background-color: aquamarine;
+	background-color: var(--dark-theme-color);
 	transform: translateX(0);
 	transition: all 0.4s ease-out;
 }
 
-.btnText {
-	color: rgb(251, 37, 118);
+.btnText,
+.lightBtntext {
+	color: var(--dark-button-text);
 	padding: 0px 2rem;
 }
 
@@ -131,8 +140,9 @@
 	color: #0a192f;
 }
 
-.btnIcon {
-	background-color: aquamarine;
+.btnIcon,
+.lightBtnIcon {
+	background-color: var(--dark-theme-color);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -189,4 +199,33 @@
 		font-size: 1.7rem;
 		padding: 0px 3rem;
 	}
+}
+
+/* Light Theme */
+
+.lightImageWrapper {
+	border-color: var(--light-theme-color);
+}
+.lightHeading1 {
+	color: var(--light-heading2-color);
+}
+
+.lightHeading2 {
+	color: var(--light-heading1-color);
+}
+
+.lightHeading3 {
+	color: var(--light-heading3-color);
+}
+.lightBtnLink {
+	border: 1px solid var(--light-download-button);
+}
+.lightBtnLink:hover::before {
+	background-color: var(--light-download-button);
+}
+.lightBtntext {
+	color: black;
+}
+.lightBtnIcon {
+	background-color: var(--light-download-button);
 }
