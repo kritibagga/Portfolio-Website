@@ -22,16 +22,40 @@ export default function Skills(props) {
 			data-aos-duration='1000'>
 			<hr className={`${styles.break}`} />
 			<div className={`${styles.aboutStats} `}>
-				<h4 className={styles.statTitle}>My Skills</h4>
+				<h4
+					className={
+						props.theme ? `${styles.lightStatTitle}` : `${styles.statTitle}`
+					}>
+					My Skills
+				</h4>
 				<div className={styles.progressBars}>
 					{skillObject.map((item) => (
 						<div
 							key={item.title}
 							className={styles.progressBar}>
-							<p className={styles.progTitle}>{item.title}</p>
+							<p
+								className={
+									props.theme
+										? `${styles.lightProgTitle}`
+										: `${styles.progTitle}`
+								}>
+								{item.title}
+							</p>
 							<div className={styles.progContent}>
-								<p className={styles.progText}>{item.percentage}%</p>
-								<div className={styles.progress}>
+								<p
+									className={
+										props.theme
+											? `${styles.lightProgText}`
+											: `${styles.progText}`
+									}>
+									{item.percentage}%
+								</p>
+								<div
+									className={
+										props.theme
+											? `${styles.lightProgress}`
+											: `${styles.progress}`
+									}>
 									<span style={{ width: `${item.percentage}%` }}></span>
 								</div>
 							</div>

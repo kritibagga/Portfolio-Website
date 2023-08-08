@@ -19,6 +19,16 @@
 	backdrop-filter: brightness(0.15);
 	-webkit-backdrop-filter: brightness(1);
 }
+.lightTheme {
+	background-color: white;
+	background: url(./Images/lightBackground.jpg);
+	background-size: cover;
+	backdrop-filter: brightness(0.15);
+	-webkit-backdrop-filter: brightness(0.15);
+	min-height: 100vh;
+	background-attachment: fixed;
+	color: black;
+}
 
 .footerWrap {
 	animation: growDown 500ms ease forwards;

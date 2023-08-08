@@ -11,6 +11,13 @@ import Footer from "./Footer.jsx";
 
 function Portfolio() {
 	const [isLoading, setIsLoading] = useState(true);
+	const [isLightTheme, setIsLightTheme] = useState(false);
+
+	const toggleTheme = () => {
+		setIsLightTheme((prevTheme) => !prevTheme);
+	};
+
+	const themeClass = isLightTheme ? styles.lightTheme : "";
 
 	useEffect(() => {
 		// Simulate loading time with setTimeout (will remove this in a real scenario)
@@ -29,29 +36,31 @@ function Portfolio() {
 			<h1 className={styles.loaderText}>Loading.....</h1>
 		</div>
 	) : (
-		<main className={styles.background}>
-			<NavBar />
-
+		<main className={`${styles.background} ${themeClass}`}>
+			<NavBar
+				theme={isLightTheme}
+				toggle={toggleTheme}
+			/>
 			<Routes>
 				<Route
 					path='/'
-					element={<HomePage />}
+					element={<HomePage theme={isLightTheme} />}
 				/>
 				<Route
 					path='/home/*'
-					element={<HomePage />}
+					element={<HomePage theme={isLightTheme} />}
 				/>
 				<Route
 					path='/home/about'
-					element={<AboutMe />}
+					element={<AboutMe theme={isLightTheme} />}
 				/>
 				<Route
 					path='/home/contact'
-					element={<Contact />}
+					element={<Contact theme={isLightTheme} />}
 				/>
 				<Route
 					path='/home/project'
-					element={<Project />}
+					element={<Project theme={isLightTheme} />}
 				/>
 			</Routes>
 			<footer className={styles.footerWrap}>

@@ -1,9 +1,10 @@
 import styles from "./SocialIcons.module.css";
 import React from "react";
 
-function SocialIcons() {
+function SocialIcons(props) {
+	const icons = props.theme ? styles.lightSocialLinks : styles.socialLinks;
 	return (
-		<ul className={`${styles.socialLinks} animation`}>
+		<ul className={`${icons} animation`}>
 			<li>
 				<a
 					href='https://github.com/kritibagga'

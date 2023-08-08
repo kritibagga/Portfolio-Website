@@ -5,10 +5,12 @@ import SocialIcons from "./SocialIcons.jsx";
 const FORM_ENDPOINT =
 	"https://public.herotofu.com/v1/b50a65c0-d4b5-11ed-b656-837b57be60e0";
 
-const ContactForm = () => {
+const ContactForm = (props) => {
 	const [submitted, setSubmitted] = useState(false);
 	const [text, setText] = useState("Submit");
 	const [icon, setIcon] = useState("fa-solid fa-envelope");
+	const titleStyle = props.theme ? styles.lightTitle : styles.title;
+	const inputStyle = props.theme ? styles.lightInput : styles.inputControl;
 	const [style, setStyle] = useState({
 		color: "white",
 		backgroundColor: "#0000ff70",
@@ -44,13 +46,21 @@ const ContactForm = () => {
 	return (
 		<>
 			<div className={`${styles.wrapper} animation`}>
-				<div className={styles.title}>
+				<div className={titleStyle}>
 					<h2>
 						Send Me A <span>Message</span>
-						<span className={styles.bgText}>Contact</span>
+						<span
+							className={
+								props.theme ? `${styles.lightBgText}` : `${styles.bgText}`
+							}>
+							Contact
+						</span>
 					</h2>
 				</div>
-				<p className={styles.headingPara}>
+				<p
+					className={
+						props.theme ? `${styles.lightHeadingPara}` : `${styles.headingPara}`
+					}>
 					Get in touch or shoot me email directly on
 					<a href='mailto:bagga.kriti@gmail.com'> bagga.kriti@gmail.com</a>
 				</p>
@@ -62,7 +72,7 @@ const ContactForm = () => {
 						onSubmit={handleSubmit}
 						method='POST'
 						target='_blank'>
-						<div className={`${styles.inputControl} ${styles.ic}`}>
+						<div className={`${inputStyle} ${styles.ic}`}>
 							<input
 								type='text'
 								name='name'
@@ -77,7 +87,7 @@ const ContactForm = () => {
 							/>
 						</div>
 
-						<div className={styles.inputControl}>
+						<div className={inputStyle}>
 							<textarea
 								name='message'
 								cols='15'
@@ -89,7 +99,9 @@ const ContactForm = () => {
 							<button
 								onClick={handleClick}
 								type='submit'
-								className={styles.btn}>
+								className={
+									props.theme ? `${styles.lightBtn}` : `${styles.btn}`
+								}>
 								{text}
 								<i
 									className={icon}
@@ -97,7 +109,7 @@ const ContactForm = () => {
 							</button>
 						</div>
 						<div className={styles.contactFooter}>
-							<SocialIcons />
+							<SocialIcons theme={props.theme} />
 						</div>
 					</form>
 				</div>

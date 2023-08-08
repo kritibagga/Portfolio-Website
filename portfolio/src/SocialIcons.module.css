@@ -1,11 +1,14 @@
-.socialLinks {
+.socialLinks,
+.lightSocialLinks {
 	display: block;
 }
-.socialLinks li {
+.socialLinks li,
+.lightSocialLinks li {
 	list-style: none;
 }
 
-.socialLinks li a {
+.socialLinks li a,
+.lightSocialLinks li a {
 	background-color: rgb(127, 255, 212);
 	display: block;
 	font-size: 35px;
@@ -25,12 +28,14 @@
 	transition: all 0.5s ease 0s;
 }
 
-.socialLinks li a:hover .icon {
+.socialLinks li a:hover .icon,
+.lightSocialLinks li a:hover .icon {
 	color: #fff;
 	transform: rotateY(360deg);
 }
 
-.socialLinks li a:before {
+.socialLinks li a:before,
+.lightSocialLinks li a:before {
 	content: "";
 	height: 100%;
 	left: 0px;
@@ -45,28 +50,36 @@
 	transition: all 0.5s ease 0s;
 }
 
-.socialLinks li a:hover:before {
+.socialLinks li a:hover:before,
+.lightSocialLinks li a:hover:before {
 	top: 0;
 }
 
-.socialLinks li:nth-child(1) a:before {
+.socialLinks li:nth-child(1) a:before,
+.lightSocialLinks li:nth-child(1) a:before {
 	background: rgb(110, 84, 148);
 }
 
-.socialLinks li:nth-child(2) a:before {
+.socialLinks li:nth-child(2) a:before,
+.lightSocialLinks li:nth-child(2) a:before {
 	background: #15ae55;
 }
 
-.socialLinks li:nth-child(3) a:before {
+.socialLinks li:nth-child(3) a:before,
+.lightSocialLinks li:nth-child(3) a:before {
 	background: #0077b5;
 }
 
 /* Mobile View */
 @media screen and (max-width: 480px) {
-	.socialLinks {
+	.socialLinks,
+	.lightSocialLinks {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		margin-top: 1rem;
 	}
+}
+.lightSocialLinks li a {
+	background-color: var(--light-social-icon);
 }

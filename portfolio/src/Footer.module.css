@@ -61,7 +61,7 @@
 
 .locationToolTip {
 	border: 1px solid grey;
-	color: aquamarine;
+	color: var(--dark-theme-color);
 	position: absolute;
 	bottom: 3%;
 	z-index: 1;

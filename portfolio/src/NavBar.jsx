@@ -4,12 +4,15 @@ import { Link } from "react-router-dom";
 import icons1 from "./Images/icon1.png";
 import Hamburger from "hamburger-react";
 import headerIcon from "./Images/icon1.png";
+import ThemeChanger from "./ThemeChanger.jsx";
 
-const NavBar = () => {
+const NavBar = (props) => {
 	const [isOpen, setOpen] = useState(false);
 	const setTime = () => {
 		setOpen(false);
 	};
+
+	const color = props.theme ? "#ff4d4f" : "#7FFFD4";
 
 	useEffect(() => {
 		if (isOpen) {
@@ -20,7 +23,7 @@ const NavBar = () => {
 	}, [isOpen]);
 
 	return (
-		<>
+		<div>
 			<div className={styles.dropdown}>
 				<div className={styles.heading}>
 					<div className={styles.headerText}>
@@ -34,7 +37,7 @@ const NavBar = () => {
 							<Hamburger
 								toggled={isOpen}
 								toggle={setOpen}
-								color='#7FFFD4'
+								color={color}
 							/>
 						</button>
 					</span>
@@ -106,25 +109,52 @@ const NavBar = () => {
 							src={icons1}
 							alt='Kriti Bagga Icon'
 						/>
-						<span className={styles.nameIcon}>Kriti Bagga</span>
+						<span
+							className={
+								props.theme ? `${styles.lightNameIcon}` : `${styles.nameIcon}`
+							}>
+							Kriti Bagga
+						</span>
 					</div>
 				</div>
 				<ul className={styles.navBar}>
-					<li className={styles.listitems}>
+					<li
+						className={
+							props.theme ? `${styles.lightListItems}` : `${styles.listitems}`
+						}>
 						<Link to='/home'>Home</Link>
 					</li>
-					<li className={styles.listitems}>
+					<li
+						className={
+							props.theme ? `${styles.lightListItems}` : `${styles.listitems}`
+						}>
 						<Link to='/home/about'>About</Link>
 					</li>
-					<li className={styles.listitems}>
+					<li
+						className={
+							props.theme ? `${styles.lightListItems}` : `${styles.listitems}`
+						}>
 						<Link to='/home/project'>Projects</Link>
 					</li>
-					<li className={styles.listitems}>
+					<li
+						className={
+							props.theme ? `${styles.lightListItems}` : `${styles.listitems}`
+						}>
 						<Link to='/home/contact'>Contact</Link>
 					</li>
+					<div
+						className={
+							props.theme ? `${styles.lightTheme}` : `${styles.darkTheme}`
+						}>
+						<p> {props.theme ? "Dark Mode" : "Light Mode"}</p>
+						<ThemeChanger
+							isLightTheme={!props.theme}
+							toggleTheme={props.toggle}
+						/>
+					</div>
 				</ul>
 			</div>
-		</>
+		</div>
 	);
 };
 
