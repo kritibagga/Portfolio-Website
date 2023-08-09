@@ -122,6 +122,7 @@
 	color: black;
 	border: none;
 	outline: none;
+	cursor: pointer;
 }
 
 .btn i,
@@ -151,6 +152,7 @@
 	left: -27%;
 	bottom: 0;
 	right: 0;
+	width: 20%;
 }
 
 /* Mobile view */
@@ -162,11 +164,13 @@
 		min-height: 100vh;
 	}
 
-	.title h2 {
+	.title h2,
+	.lightTitle h2 {
 		font-size: 3rem;
 	}
 
-	.btn {
+	.btn,
+	.lightBtn {
 		padding: 1rem 3rem;
 		font-size: 1rem;
 	}
