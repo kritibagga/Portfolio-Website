@@ -98,6 +98,18 @@ const NavBar = (props) => {
 									</p>
 								</Link>
 							</li>
+							<div
+								className={
+									props.theme
+										? `${styles.mobileLightTheme}`
+										: `${styles.mobileDarkTheme}`
+								}>
+								<p> {props.theme ? "Dark Mode" : "Light Mode"}</p>
+								<ThemeChanger
+									isLightTheme={!props.theme}
+									toggleTheme={props.toggle}
+								/>
+							</div>
 						</ul>
 					</div>
 				)}
