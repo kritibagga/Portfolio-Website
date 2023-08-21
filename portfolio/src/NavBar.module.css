@@ -49,6 +49,19 @@
 	color: var(--dark-nav-text);
 }
 
+.mobileLightTheme,
+.mobileDarkTheme {
+	display: flex;
+	color: var(--dark-nav-text);
+	align-items: center;
+	justify-content: center;
+}
+
+.mobileLightTheme p,
+.mobileDarkTheme p {
+	margin-right: 10px;
+}
+
 .darkTheme p,
 .lightTheme p {
 	margin-right: 8px;
@@ -181,7 +194,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		height: 100vh;
+		height: 100%;
 		width: 70%;
 		z-index: 1;
 		animation: slideRight 400ms ease-in;
