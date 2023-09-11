@@ -62,7 +62,7 @@ export default function Timeline(props) {
 						}>
 						<i className='fas fa-briefcase'></i>
 					</div>
-					<p className={styles.timelineDuration}>2017 - 2019</p>
+					<p className={styles.timelineDuration}>2016 - 2019</p>
 					<h5
 						className={
 							props.theme
