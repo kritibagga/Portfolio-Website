@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.1fce770c.css",
-    "main.js": "/Portfolio-Website/static/js/main.cce7cb7e.js",
+    "main.css": "/Portfolio-Website/static/css/main.fc4b54e7.css",
+    "main.js": "/Portfolio-Website/static/js/main.54d902fe.js",
     "static/media/lightBackground.jpg": "/Portfolio-Website/static/media/lightBackground.ab7ef725fc168c979ed8.jpg",
     "static/media/weather-app.png": "/Portfolio-Website/static/media/weather-app.a67315a66533196a50dd.png",
     "static/media/Calculator App.png": "/Portfolio-Website/static/media/Calculator App.879095661fd6fd0460a7.png",
     "static/media/originalpic.jpg": "/Portfolio-Website/static/media/originalpic.91342c6cac95e81d20be.jpg",
     "static/media/PersonalPic.jpg": "/Portfolio-Website/static/media/PersonalPic.8fe777f7d243bf78d9d7.jpg",
     "static/media/portfolioImage.png": "/Portfolio-Website/static/media/portfolioImage.f50877e27a5cfcc21ec6.png",
-    "static/media/Resume.pdf": "/Portfolio-Website/static/media/Resume.3051c65a68346c8b93bb.pdf",
+    "static/media/Resume.pdf": "/Portfolio-Website/static/media/Resume.96bfadafbc98f07bc505.pdf",
     "static/media/loader.png": "/Portfolio-Website/static/media/loader.03a6571f7c5170449a64.png",
     "static/media/backgroundImage-1.jpg": "/Portfolio-Website/static/media/backgroundImage-1.a57527eadd0db56d4d80.jpg",
     "index.html": "/Portfolio-Website/index.html",
-    "main.1fce770c.css.map": "/Portfolio-Website/static/css/main.1fce770c.css.map",
-    "main.cce7cb7e.js.map": "/Portfolio-Website/static/js/main.cce7cb7e.js.map"
+    "main.fc4b54e7.css.map": "/Portfolio-Website/static/css/main.fc4b54e7.css.map",
+    "main.54d902fe.js.map": "/Portfolio-Website/static/js/main.54d902fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fce770c.css",
-    "static/js/main.cce7cb7e.js"
+    "static/css/main.fc4b54e7.css",
+    "static/js/main.54d902fe.js"
   ]
 }
