@@ -9,10 +9,18 @@ export default function Skills(props) {
 		{ title: "react js", percentage: 80, id: 4 },
 		{ title: "github", percentage: 60, id: 5 },
 		{ title: "vscode", percentage: 70, id: 6 },
-		{ title: "sql", percentage: 40, id: 7 },
+		{ title: "sql", percentage: 60, id: 7 },
 		{ title: "selenium", percentage: 50, id: 8 },
 		{ title: "core java", percentage: 40, id: 9 },
 		{ title: "hp-alm", percentage: 40, id: 10 },
+		{ title: "express js", percentage: 40, id: 11 },
+		{ title: "postgresql", percentage: 60, id: 12 },
+		{ title: "figma", percentage: 40, id: 13 },
+		{ title: "bootstrap", percentage: 40, id: 14 },
+		{ title: "redux", percentage: 40, id: 15 },
+		{ title: "storybook", percentage: 60, id: 16 },
+		{ title: "react-router", percentage: 60, id: 17 },
+		{ title: "css-modules", percentage: 80, id: 18 },
 	];
 
 	return (
