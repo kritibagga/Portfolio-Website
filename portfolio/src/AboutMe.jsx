@@ -61,7 +61,7 @@ function AboutMe(props) {
 							spreading joy and smiles wherever I go. With a heart full of
 							laughter and a spirit that dances to the rhythm of fun, I bring a
 							vibrant energy to every project. As a frontend developer with over
-							<strong> 5 years </strong> of experience, I infuse my work with a
+							<em> 6 years </em> of experience, I infuse my work with a
 							playful touch, creating delightful digital experiences that leave
 							users grinning from ear to ear. With a perpetual smile on my face,
 							I tackle challenges with enthusiasm and embrace the joy of
