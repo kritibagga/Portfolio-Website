@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio-Website/static/css/main.935e0fee.css",
-    "main.js": "/Portfolio-Website/static/js/main.236e9d72.js",
+    "main.css": "/Portfolio-Website/static/css/main.a4f33523.css",
+    "main.js": "/Portfolio-Website/static/js/main.aaefd620.js",
     "static/media/lightBackground.jpg": "/Portfolio-Website/static/media/lightBackground.ab7ef725fc168c979ed8.jpg",
     "static/media/weather-app.png": "/Portfolio-Website/static/media/weather-app.a67315a66533196a50dd.png",
     "static/media/Calculator App.png": "/Portfolio-Website/static/media/Calculator App.879095661fd6fd0460a7.png",
     "static/media/originalpic.jpg": "/Portfolio-Website/static/media/originalpic.91342c6cac95e81d20be.jpg",
+    "static/media/e-comm app.png": "/Portfolio-Website/static/media/e-comm app.a679d8b3093e469bb5eb.png",
     "static/media/PersonalPic.jpg": "/Portfolio-Website/static/media/PersonalPic.8fe777f7d243bf78d9d7.jpg",
     "static/media/portfolioImage.png": "/Portfolio-Website/static/media/portfolioImage.f50877e27a5cfcc21ec6.png",
     "static/media/loader.png": "/Portfolio-Website/static/media/loader.03a6571f7c5170449a64.png",
     "static/media/backgroundImage-1.jpg": "/Portfolio-Website/static/media/backgroundImage-1.a57527eadd0db56d4d80.jpg",
     "static/media/Resume.pdf": "/Portfolio-Website/static/media/Resume.1e9a355eeb388e7a87ee.pdf",
+    "static/media/todolist.png": "/Portfolio-Website/static/media/todolist.a5aaaed8d94e034b29ea.png",
     "index.html": "/Portfolio-Website/index.html",
-    "main.935e0fee.css.map": "/Portfolio-Website/static/css/main.935e0fee.css.map",
-    "main.236e9d72.js.map": "/Portfolio-Website/static/js/main.236e9d72.js.map"
+    "main.a4f33523.css.map": "/Portfolio-Website/static/css/main.a4f33523.css.map",
+    "main.aaefd620.js.map": "/Portfolio-Website/static/js/main.aaefd620.js.map"
   },
   "entrypoints": [
-    "static/css/main.935e0fee.css",
-    "static/js/main.236e9d72.js"
+    "static/css/main.a4f33523.css",
+    "static/js/main.aaefd620.js"
   ]
 }
