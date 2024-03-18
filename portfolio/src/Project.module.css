@@ -233,7 +233,6 @@ a {
 
 	.portfolioItem img,
 	.portfolioItemLightTheme img {
-		height: 100%;
 		margin-top: 2rem;
 	}
 }
