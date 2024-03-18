@@ -1,0 +1,9 @@
+.linkText span {
+	color: var(--dark-theme-color);
+	cursor: pointer;
+}
+
+.linkTextLightTheme span {
+	color: var(--light-theme-color);
+	cursor: pointer;
+}

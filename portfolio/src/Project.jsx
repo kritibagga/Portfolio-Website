@@ -1,11 +1,11 @@
 import styles from "./Project.module.css";
 import React from "react";
-import weatherAPP from "./Images/weather-app.png";
-import CalculatorImage from "./Images/Calculator App.png";
-import PortfolioImage from "./Images/portfolioImage.png";
+import ProjectList from "./ProjectList.js";
+import ReadMore from "./ReadMore.jsx";
 
 function Project(props) {
 	const titleStyle = props.theme ? styles.lightTitle : styles.title;
+
 	return (
 		<section className={`${styles.container} animation`}>
 			<div className={titleStyle}>
@@ -27,93 +27,87 @@ function Project(props) {
 				ReactJS.
 			</p>
 			<div
-				className={styles.portfolios}
+				className={styles.projectList}
 				data-aos='fade-up'
 				data-aos-duration='1000'>
-				<div className={styles.portfolioItem}>
-					<div className={styles.image}>
-						<img
-							src={weatherAPP}
-							alt='Weather App Project'
-						/>
-						<h1
+				{ProjectList?.map((project, key) => {
+					return (
+						<div
 							className={
-								props.theme ? `${styles.lightCaptions}` : `${styles.captions}`
-							}>
-							Weather App
-						</h1>
-					</div>
-					<div className={styles.hoverItems}>
-						<h3>Project Source</h3>
-						<div className={styles.icons}>
-							<a
-								href='https://github.com/kritibagga/Weather-Application'
-								className={styles.icon}
-								target='_blank'
-								rel='noreferrer'>
-								<i className='fab fa-github'></i>
-							</a>
+								props.theme
+									? `${styles.portfolioItemLightTheme}`
+									: `${styles.portfolioItem}`
+							}
+							key={key}>
+							<div
+								className={
+									props.theme
+										? `${styles.cardTitleLightTheme}`
+										: `${styles.cardTitle}`
+								}>
+								<i className='fa-solid fa-paperclip'></i>
+								<h1
+									className={
+										props.theme
+											? `${styles.lightCaptions}`
+											: `${styles.captions}`
+									}>
+									{project.title}
+								</h1>
+							</div>
+
+							<div
+								className={
+									props.theme
+										? `${styles.itemDescriptionLightTheme}`
+										: `${styles.itemDescription}`
+								}>
+								<img
+									src={project.src}
+									alt={project.title}
+								/>
+								<div>
+									<p>
+										<span className={styles.description}>Description:</span>{" "}
+										<ReadMore
+											text={project.description}
+											theme={props.theme}
+										/>
+									</p>
+								</div>
+								<div className={styles.techWrapper}>
+									<ul>
+										{project.tech?.map((item, key) => {
+											return (
+												<li
+													className={styles.tech}
+													key={key}>
+													<img
+														src={item}
+														alt=''
+													/>
+												</li>
+											);
+										})}
+									</ul>
+								</div>
+
+								<div
+									className={
+										props.theme ? `${styles.linkLightTheme}` : `${styles.link}`
+									}>
+									<i className={`fa-brands fa-github ${styles.githubIcon} `} />
+									<a
+										href={project.link}
+										target='_blank'
+										rel='noreferrer'>
+										Source Code
+									</a>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div
-					className={styles.portfolioItem}
-					data-aos='fade-up'
-					data-aos-duration='1000'>
-					<div className={styles.image}>
-						<img
-							src={CalculatorImage}
-							alt='Calculator Project'
-						/>
-						<h1
-							className={
-								props.theme ? `${styles.lightCaptions}` : `${styles.captions}`
-							}>
-							Calculator
-						</h1>
-					</div>
-					<div className={styles.hoverItems}>
-						<h3>Project Source</h3>
-						<div className={styles.icons}>
-							<a
-								href='https://github.com/kritibagga/Calculator'
-								className={styles.icon}
-								target='_blank'
-								rel='noreferrer'>
-								<i className='fab fa-github'></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div
-					className={styles.portfolioItem}
-					data-aos='fade-up'
-					data-aos-duration='1000'>
-					<div className={styles.image}>
-						<img
-							src={PortfolioImage}
-							alt='Portfolio Project'
-						/>
-						<h1
-							className={
-								props.theme ? `${styles.lightCaptions}` : `${styles.captions}`
-							}>
-							Portfolio
-						</h1>
-					</div>
-					<div className={styles.hoverItems}>
-						<h3>Project Source</h3>
-						<div className={styles.icons}>
-							<a
-								href='https://github.com/kritibagga/Portfolio-Website'
-								className={styles.icon}
-								target='_blank'
-								rel='noreferrer'>
-								<i className='fab fa-github'></i>
-							</a>
-						</div>
-					</div>
-				</div>
+					);
+				})}
 			</div>
 		</section>
 	);

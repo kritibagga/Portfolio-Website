@@ -43,6 +43,7 @@ html {
 	--dark-theme-color: aquamarine;
 	--dark-button-text: rgb(251, 37, 118);
 	--dark-nav-text: #9ca4ab;
+	--dark-project-text: #fff;
 
 	/* Light */
 	--light-theme-color: darkgreen;
@@ -57,4 +58,5 @@ html {
 	--light-about-me-section: #f1f7ec;
 	--light-text-1: #2a2e35;
 	--light-contact-input: #87d59a;
+	--light-project-text:#000;
 }
