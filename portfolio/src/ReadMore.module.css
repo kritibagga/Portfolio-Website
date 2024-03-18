@@ -2,6 +2,9 @@
 	color: var(--dark-theme-color);
 	cursor: pointer;
 }
+.linkTextLightTheme {
+	color: var(--light-heading3-color);
+}
 
 .linkTextLightTheme span {
 	color: var(--light-theme-color);

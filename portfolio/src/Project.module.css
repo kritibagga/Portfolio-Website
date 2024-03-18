@@ -102,10 +102,6 @@
 	color: white;
 }
 
-.itemDescriptionLightTheme p {
-	color: var(--light-heading3-color);
-}
-
 .description {
 	font-weight: bolder;
 	color: darksalmon;
