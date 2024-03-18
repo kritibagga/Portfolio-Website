@@ -117,10 +117,17 @@ const NavBar = (props) => {
 			<div className={styles.navWrapper}>
 				<div className={styles.leftNav}>
 					<div className={styles.leftWrapper}>
-						{props.theme?<img src="https://cdn-icons-png.flaticon.com/128/9037/9037235.png" alt="Kriti Icon Light Theme"/> :<img
-							src={icons1}
-							alt='Kriti Bagga Icon'
-						/>}
+						{props.theme ? (
+							<img
+								src='https://cdn-icons-png.flaticon.com/128/9037/9037235.png'
+								alt='Kriti Icon Light Theme'
+							/>
+						) : (
+							<img
+								src={icons1}
+								alt='Kriti Bagga Icon'
+							/>
+						)}
 						<span
 							className={
 								props.theme ? `${styles.lightNameIcon}` : `${styles.nameIcon}`

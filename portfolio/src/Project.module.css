@@ -277,18 +277,18 @@ a {
 }
 
 /* Laptop View */
-@media only screen and (min-width: 769px) and (max-width: 1440px) {
+/* @media only screen and (min-width: 769px) and (max-width: 1440px) {
 	.container {
 		padding: 5rem 2.5rem;
 	}
 	.itemDescription p {
 		font-size: 1rem;
 	}
-}
+} */
 
 /* Large Desktop/Screen  view */
 @media only screen and (min-width: 1441px) {
-	.itemDescription p {
+	.itemDescription p ,.itemDescriptionLightTheme p{
 		font-size: 1.5rem;
 	}
 
@@ -302,7 +302,7 @@ a {
 		font-size: 2rem;
 	}
 
-	.itemDescription {
+	.itemDescription ,.itemDescriptionLightTheme{
 		margin-bottom: 6rem;
 	}
 

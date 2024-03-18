@@ -148,7 +148,7 @@
 }
 
 /* Mobile View */
-@media only screen and (max-width: 678px) {
+@media only screen and (max-width: 480px) {
 	.dropdown {
 		display: block;
 	}
