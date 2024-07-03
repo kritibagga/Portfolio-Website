@@ -1,20 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./ReadMore.module.css";
 
-const ReadMore = ({ text, theme }) => {
-	const [isReadMore, setIsReadMore] = useState(true);
-	const toggleReadMore = () => {
-		setIsReadMore(!isReadMore);
-	};
-
+const ReadMore = ({ text, theme, expanded, onToggleExpand }) => {
+	const truncatedText = text.slice(0, 200);
+	const shouldShowMore = text.length > 200;
 	return (
-		<span
-			className={theme ? `${styles.linkTextLightTheme}` : `${styles.linkText}`}>
-			{isReadMore ? text.slice(0, 200) : text}
+		<span className={theme ? styles.linkTextLightTheme : styles.linkText}>
+			{expanded ? text : truncatedText}
 
-			{text.length > 200 && (
-				<span onClick={toggleReadMore}>
-					{isReadMore ? "...read more" : " ...show less"}
+			{shouldShowMore && (
+				<span onClick={onToggleExpand}>
+					{expanded ? " ...show less" : "...read more"}
 				</span>
 			)}
 		</span>
