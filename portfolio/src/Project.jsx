@@ -15,7 +15,6 @@ function Project(props) {
 		}));
 	};
 
-	console.log(expandedProjects);
 	return (
 		<section className={`${styles.container} animation`}>
 			<div className={titleStyle}>
