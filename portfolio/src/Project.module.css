@@ -59,23 +59,25 @@
 .projectList {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	gap: 2rem;
 	justify-content: center;
 	margin-bottom: 3rem;
+	align-items: stretch;
+	padding:3rem;
 }
 
 .portfolioItem,
 .portfolioItemLightTheme {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; /* Space out content within the box */
+	align-content: stretch; /* Ensure content takes up full height */
+	flex-grow: 1; /* Allow flexibility in resizing */
 	border-radius: 30px;
 	border: 1px solid var(--dark-project-text);
 	color: var(--dark-project-text);
 	padding: 1.5rem;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
 	width: 25%;
-	height: 40%; /* Fixed height for consistency */
 	overflow: hidden;
 	position: relative;
 }
@@ -205,6 +207,7 @@ a {
 	}
 	.projectList {
 		flex-direction: column;
+		padding:0;
 	}
 
 	.portfolioItem,
@@ -274,17 +277,8 @@ a {
 	}
 }
 
-/* Laptop View */
-/* @media only screen and (min-width: 769px) and (max-width: 1440px) {
-	.container {
-		padding: 5rem 2.5rem;
-	}
-	.itemDescription p {
-		font-size: 1rem;
-	}
-} */
 
-/* Large Desktop/Screen  view */
+/* Large Desktop/Screen view */
 @media only screen and (min-width: 1441px) {
 	.itemDescription p,
 	.itemDescriptionLightTheme p {
@@ -309,5 +303,9 @@ a {
 	.portfolioItem,
 	.portfolioItemLightTheme {
 		padding: 2rem;
+	}
+	.projectList{
+		width:60%;
+		margin:0 auto;
 	}
 }
